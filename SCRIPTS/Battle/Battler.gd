@@ -10,7 +10,7 @@ const BattlerStats = preload("res://SCRIPTS/RPG/Stats/BattlerStats.gd")
 export(int, 100, 300) var battler_speed = 100 # Pixels/second
 export(bool) var override_stats = false
 export(int, 1, 2000) var max_health = 1
-export(int, 1, 2000) var max_mana   = 1
+export(int, 0, 2000) var max_mana   = 0
 export(int, 1, 100) var strength    = 1
 export(int, 1, 100) var defense     = 1
 
