@@ -10,6 +10,7 @@ var level = Level.new()
 var stats = PlayerStats.new({
 	"lv" : 1,
 	"max_hp" : 50, "hp" : 50,
+	"str" : 1,
 })
 
 func has(key):
