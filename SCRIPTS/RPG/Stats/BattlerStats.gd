@@ -43,7 +43,7 @@ func _init(copy={}):
 		set_max(stat, max(base[stat], 0)) # The minimum maximum is 0.
 
 	# Handling exceptions
-	set_max("hp", max(base.hp, 1)) # Max HP is >= 1
+	set_max("hp", max(base.max_hp, 1)) # Max HP is >= 1
 
 	connect("modifier_changed", self, "update")
 
@@ -81,8 +81,9 @@ func set_max(stat, value):
 	# If there's a cap, update that and the base stat if it overflows
 	if max_stat in MAX_STATS && value > 0:
 		set_base(max_stat, value)
-		set_base(stat, min(get_base(stat), value))
+		set_base(stat, value)
 		final[max_stat] = value
+		final[stat] = value
 
 func get_max(stat):
 	return get("max_" + stat)

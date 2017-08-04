@@ -112,8 +112,9 @@ func test_battle1():
 	print("\nYour battler got 'Bravery'")
 	apply_mod(battler, bravery)
 
-	print("\nYour battler got hit: -12")
-	battler.set("hp", battler.get("hp")-12)
+	var damage = -8
+	print("\nYour battler got hit: ", damage)
+	battler.set("hp", battler.get("hp")+damage)
 	battler.print_stats()
 
 	print("\nYour battler got 'Curse'")
