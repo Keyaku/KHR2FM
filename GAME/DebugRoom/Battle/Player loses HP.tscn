@@ -46,7 +46,7 @@ show_bar_values = true
 
 transform/pos = Vector2( 420, 240 )
 override_stats = true
-max_health = 500
+max_health = 100
 max_mana = 50
 
 [node name="Hurts" type="Area2D" parent="BattlePlan"]

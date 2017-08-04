@@ -26,6 +26,7 @@ scroll/ignore_camera_zoom = false
 
 [node name="BattlePlan" parent="." instance=ExtResource( 2 )]
 
+show_bar_values = false
 battle_music = ExtResource( 3 )
 
 [node name="InfoBar" parent="BattlePlan" instance=ExtResource( 4 )]

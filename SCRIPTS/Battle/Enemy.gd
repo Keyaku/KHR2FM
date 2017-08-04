@@ -15,7 +15,13 @@ func _ready():
 	if not override_stats:
 		# Use data saved on a specific Enemy database
 		#stats = BattlerStats.new(database.get(get_name()))
-		pass
+		# FIXME: remove this override code
+		stats = BattlerStats.new({
+			"max_hp" : max_health, "hp" : max_health,
+			"max_mp" : max_mana,   "mp" : max_mana,
+			"str" : strength,
+			"def" : defense,
+		})
 	else:
 		stats = BattlerStats.new({
 			"max_hp" : max_health, "hp" : max_health,
@@ -35,7 +41,7 @@ func _ready():
 
 		# Disable random_instances regardless of its former value
 		random_instances = false
-		call_deferred("instance_next")
+		instance_next()
 
 ###############
 ### Methods ###

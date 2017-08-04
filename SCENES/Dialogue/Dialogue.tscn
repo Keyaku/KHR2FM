@@ -84,7 +84,7 @@ tracks/0/keys = {
 
 font/size = 18
 font/use_mipmaps = false
-font/use_filter = true
+font/use_filter = false
 font/font = ExtResource( 6 )
 
 [node name="Dialogue" type="Control"]
@@ -262,7 +262,7 @@ margin/right = 0.85
 margin/bottom = 20.0
 custom_fonts/font = SubResource( 4 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/line_spacing = 9
+custom_constants/line_spacing = 5
 custom_constants/shadow_as_outline = 1
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut risus nisi, venenatis vitae imperdiet non, rhoncus ac felis. Nunc iaculis ipsum ipsum, a vehicula massa commodo non."
 valign = 3

@@ -11,9 +11,15 @@ var enemy = {}
 ### Core functions ###
 ######################
 func _ready():
+	var Player = get_node("Player")
+	var Enemy  = get_node("Enemy")
 	# Automagically set up node references
-	reset_hud(get_node("Player"), player)
-	reset_hud(get_node("Enemy"), enemy)
+	reset_hud(Player, player)
+	reset_hud(Enemy, enemy)
+
+	if !get_tree().is_editor_hint():
+		Player.set_self_opacity(0)
+		Enemy.set_self_opacity(0)
 
 # Updates the label of a given ProgressBar node, if available
 func _update_label(node, value):
