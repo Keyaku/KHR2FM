@@ -50,9 +50,10 @@ func _ready():
 	add_child(playtime)
 
 	# Final settings
-	set_layer(100)
-	set_pause_mode(PAUSE_MODE_PROCESS)
-	set_process_input(true)
+	randomize()                        # Resetting seed
+	set_layer(100)                     # This node stays above all the rest
+	set_pause_mode(PAUSE_MODE_PROCESS) # This node processes when paused
+	set_process_input(true)            # This node captures important input
 
 # Setter for global KHR2 variables
 func _set(key, value):
@@ -68,10 +69,7 @@ func _notification(notif):
 
 func _input(event):
 	if event.is_pressed() && !event.is_echo():
-		# Detect a quit ---> HIGH PRIORITY! Call the quit function right away
-		if event.is_action("quit"):
-			get_tree().quit()
-		elif event.is_action("fullscreen"):
+		if event.is_action("fullscreen"):
 			fullscreen()
 		elif event.is_action("pause"):
 			pause_game()
