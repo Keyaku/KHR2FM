@@ -13,8 +13,8 @@ const MP_FG = [
 	preload("res://ASSETS/GFX/Game/Battle/HUD/Player/MP-recover.png"),
 ]
 const MP_COLORS = [
+	Color(0.46, 0.41, 0.92),
 	Color(0.88, 0.41, 0.89),
-	Color(0.46, 0.41, 0.92)
 ]
 
 # Export values
@@ -23,6 +23,9 @@ export(bool) var rage_state = false setget set_state
 # Instance members
 onready var MP_label = get_node("Label")
 var decrement = Timer.new()
+
+# "Private" members
+var initial_pos
 
 ########################
 ### Export functions ###
@@ -44,6 +47,10 @@ func set_state(value):
 ### Core functions ###
 ######################
 func _ready():
+	# Setting MP bar's initial position (for SlideAnim)
+	initial_pos = OS.get_video_mode_size()
+	initial_pos.y = get_global_pos().y
+
 	# Runtime settings
 	if not get_tree().is_editor_hint():
 		# Setting rage mode timer
@@ -57,6 +64,17 @@ func _ready():
 		# Setting up automatic switching upon reaching 0
 		connect("zero", self, "switch_state")
 
+func _display():
+	var final_pos = get_global_pos()
+	set_global_pos(initial_pos)
+	SlideAnim.stop_all()
+	SlideAnim.interpolate_method(
+		self, "set_global_pos",
+		initial_pos, final_pos,
+		1, Tween.TRANS_EXPO, Tween.EASE_OUT
+	)
+	SlideAnim.start()
+
 #######################
 ### Signal routines ###
 #######################
@@ -68,6 +86,7 @@ func switch_state():
 		emit_signal("begin_rage")
 	else:
 		decrement.stop()
+		_display()
 		emit_signal("end_rage")
 
 func _decrementing():

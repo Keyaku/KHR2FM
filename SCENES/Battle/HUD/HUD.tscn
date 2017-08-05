@@ -17,7 +17,7 @@
 [ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Enemy/Boss-Fond.png" type="Texture" id=15]
 [ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Commands/Commands_Lr_010.png" type="Texture" id=16]
 
-[sub_resource type="StyleBoxTexture" id=7]
+[sub_resource type="StyleBoxTexture" id=1]
 
 content_margin/left = -1.0
 content_margin/right = -1.0
@@ -34,7 +34,7 @@ expand_margin/top = 0.0
 expand_margin/bottom = 0.0
 draw_center = true
 
-[sub_resource type="StyleBoxTexture" id=8]
+[sub_resource type="StyleBoxTexture" id=2]
 
 content_margin/left = -1.0
 content_margin/right = -1.0
@@ -51,21 +51,21 @@ expand_margin/top = 0.0
 expand_margin/bottom = 0.0
 draw_center = true
 
-[sub_resource type="DynamicFont" id=9]
+[sub_resource type="DynamicFont" id=3]
 
 font/size = 16
 font/use_mipmaps = false
 font/use_filter = false
 font/font = ExtResource( 10 )
 
-[sub_resource type="StyleBoxEmpty" id=10]
+[sub_resource type="StyleBoxEmpty" id=4]
 
 content_margin/left = -1.0
 content_margin/right = -1.0
 content_margin/top = -1.0
 content_margin/bottom = -1.0
 
-[sub_resource type="StyleBoxTexture" id=11]
+[sub_resource type="StyleBoxTexture" id=5]
 
 content_margin/left = -1.0
 content_margin/right = -1.0
@@ -82,7 +82,7 @@ expand_margin/top = 0.0
 expand_margin/bottom = 0.0
 draw_center = true
 
-[sub_resource type="DynamicFont" id=12]
+[sub_resource type="DynamicFont" id=6]
 
 font/size = 9
 font/use_mipmaps = false
@@ -247,10 +247,10 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 145.0
 margin/top = 140.0
-margin/right = 320.0
+margin/right = 321.0
 margin/bottom = 156.0
-custom_styles/fg = SubResource( 7 )
-custom_styles/bg = SubResource( 8 )
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
 range/min = 0.0
 range/max = 100.0
 range/step = 1.0
@@ -301,8 +301,8 @@ margin/left = -2.0
 margin/top = -4.0
 margin/right = 23.0
 margin/bottom = 19.0
-custom_fonts/font = SubResource( 9 )
-custom_colors/font_color = Color( 0.88, 0.41, 0.89, 1 )
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.46, 0.41, 0.92, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_as_outline = 1
 text = "MP"
@@ -342,7 +342,7 @@ margin/top = 10.0
 margin/right = -275.0
 margin/bottom = 20.0
 custom_styles/fg = ExtResource( 11 )
-custom_styles/bg = SubResource( 10 )
+custom_styles/bg = SubResource( 4 )
 range/min = 0.0
 range/max = 100.0
 range/step = 1.0
@@ -429,7 +429,7 @@ margin/left = -2.0
 margin/top = 11.0
 margin/right = 14.0
 margin/bottom = 24.0
-custom_styles/panel = SubResource( 11 )
+custom_styles/panel = SubResource( 5 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -445,7 +445,7 @@ margin/left = 17.0
 margin/top = -1.0
 margin/right = 33.0
 margin/bottom = 13.0
-custom_fonts/font = SubResource( 12 )
+custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 0.588235, 0.607843, 0.580392, 1 )
 text = "HP"
 align = 1
