@@ -72,4 +72,4 @@ func set_enemy_stats(stats):
 # e.g. player["hp"].set_value(50)
 func apply_value(key, value, member):
 	member[key].set_value(value)
-	_update_label(member[key], value) # FIXME: grab stats' current value
+	_update_label(member[key], value)

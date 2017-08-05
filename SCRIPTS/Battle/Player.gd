@@ -49,7 +49,8 @@ func _ready():
 	if HUD != null:
 		HUD.set_player_stats(stats)
 		HUD.player.hp.set_player_face(face)
-		HUD.player.mp.connect("end_rage", stats, "set", ["mp", stats.get_max("mp")])
+		HUD.player.mp.connect("begin_rage", stats, "block", ["mp"])
+		HUD.player.mp.connect("end_rage", stats, "unblock", ["mp", stats.get_max("mp")])
 
 	# Connecting signals
 	AnimMethodical.connect("animation_started", self, "_action_started")

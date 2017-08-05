@@ -2,6 +2,7 @@ tool
 extends "DynamicBar.gd"
 
 # Signals
+signal begin_rage
 signal end_rage
 
 # Constants
@@ -62,19 +63,16 @@ func _ready():
 func switch_state():
 	set_state(!rage_state)
 	if rage_state:
-		set_value(get_max(), true)
+		set_value(get_max())
 		decrement.start()
+		emit_signal("begin_rage")
 	else:
 		decrement.stop()
 		emit_signal("end_rage")
 
 func _decrementing():
-	set_value(get_value()-1, true)
+	set_value(get_value()-1)
 
 ###############
 ### Methods ###
 ###############
-# Overloading (necessary)
-func set_value(value, raging=false):
-	if rage_state != STATE_RAGE || raging:
-		.set_value(value)

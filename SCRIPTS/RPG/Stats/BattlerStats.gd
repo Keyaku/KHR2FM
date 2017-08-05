@@ -21,6 +21,9 @@ var MAIN_STATS = [
 # Final Dictionary with updated values for quick reference
 var final = {}
 
+# Array of blocked stats
+var blocked = []
+
 ######################
 ### Core functions ###
 ######################
@@ -49,6 +52,9 @@ func _init(copy={}):
 
 # Sets final stat values
 func _set(stat, value):
+	if stat in blocked:
+		return
+
 	if stat in final:
 		# Avoid negative values
 		value = max(round(value), 0)
@@ -87,6 +93,16 @@ func set_max(stat, value):
 
 func get_max(stat):
 	return get("max_" + stat)
+
+# Blocking system: blocks alteration of stat values
+func block(stat):
+	if not stat in blocked:
+		blocked.push_back(stat)
+
+func unblock(stat, value=-1):
+	blocked.erase(stat)
+	if 0 <= value && value <= get_max(stat):
+		set(stat, value)
 
 # Updates all stats (or just the given one) so as to not over/underflow.
 # This is called automatically, but can be called upon request
