@@ -80,13 +80,13 @@ func _display():
 #######################
 func switch_state():
 	set_state(!rage_state)
+	_display()
 	if rage_state:
 		set_value(get_max())
 		decrement.start()
 		emit_signal("begin_rage")
 	else:
 		decrement.stop()
-		_display()
 		emit_signal("end_rage")
 
 func _decrementing():

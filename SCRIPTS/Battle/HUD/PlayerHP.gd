@@ -3,7 +3,8 @@ extends "res://SCRIPTS/RoundProgress.gd"
 
 # Constants
 enum PLAYER_FACES { FACE_NORMAL, FACE_NEAR, FACE_HURT, FACE_MAX }
-const THRESHOLD = 0.1
+# Threshold between 0 and 1 of when Player should be alarmed
+const THRESHOLD = 0.3
 
 # Export values
 export(Texture) var player_face setget set_player_face

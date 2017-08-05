@@ -2,7 +2,7 @@ extends ProgressBar
 
 ################################################################################
 #	DynamicBar
-# A representation and partial dataholder for stuff like Health bars
+# A representation for stuff like Health bars
 ################################################################################
 
 # Signals
