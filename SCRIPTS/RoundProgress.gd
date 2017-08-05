@@ -7,7 +7,6 @@ export(NodePath) var foreground_polygon = NodePath("fg") setget set_fg_node
 export(int) var thickness = 20 setget set_thickness
 
 # Constants
-const BG_COLOR = Color(0.2, 0.2, 0.2) # Color for Background bar
 const ARC_ANGLE = 270                 # Amount of arc to draw in degrees
 const MAX_ARC_VALUE = 100             # Value representative of the arc
 const NUM_POINTS = 24                 # Number of points to render the polygon
