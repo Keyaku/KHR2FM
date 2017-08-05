@@ -6,12 +6,15 @@ const PlayerStats = preload("res://SCRIPTS/RPG/Stats/PlayerStats.gd")
 
 
 # "Private" members
-var level = Level.new()
+# Levels
+var exp_level   = Level.new([])
+var bonus_level = Level.new({})
+
 var stats = PlayerStats.new({
-	"lv" : 1,
-	"max_hp" : 50, "hp" : 50,
-	"str" : 1,
+	"lv" : 1, "bonus_lv" : 0,
+	"max_hp" : 20, "max_mp" : 10,
+	"str" : 1, "def" : 0,
 })
 
 func has(key):
-	return key in ["level", "stats"]
+	return key in ["exp_level", "bonus_level", "stats"]

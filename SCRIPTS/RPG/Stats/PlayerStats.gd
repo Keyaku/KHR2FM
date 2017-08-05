@@ -1,9 +1,11 @@
 extends "Stats.gd"
 
+# Classes
+const Stats = preload("Stats.gd")
 
 # Main stats list for the average Battler
 var MAIN_STATS = [
-	"lv",
+	"lv", "bonus_lv",
 	"max_hp", "max_mp",
 	"str", "def"
 ]
@@ -15,6 +17,12 @@ var final = {}
 ### Core functions ###
 ######################
 func _init(copy={}):
+	if typeof(copy) != TYPE_DICTIONARY:
+		if copy extends Stats:
+			copy = copy.base
+		else:
+			copy = {}
+
 	# General base stats filling
 	for stat in MAIN_STATS:
 		base[stat] = max(round(copy[stat]), 0) if copy.has(stat) else 0
