@@ -1,16 +1,17 @@
-[gd_scene load_steps=16 format=1]
+[gd_scene load_steps=17 format=1]
 
 [ext_resource path="res://SCRIPTS/Battle/HUD/HUD.gd" type="Script" id=1]
 [ext_resource path="res://SCRIPTS/RoundProgress.gd" type="Script" id=2]
 [ext_resource path="res://addons/bordered-polygon-2d/bordered_polygon_2d.gd" type="Script" id=3]
 [ext_resource path="res://addons/bordered-polygon-2d/icon.png" type="Texture" id=4]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Enemy/Boss-Barr-vert.tres" type="StyleBox" id=5]
-[ext_resource path="res://SCRIPTS/Battle/HUD/EnemyHP.gd" type="Script" id=6]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Enemy/Boss-Barr-rouge.tres" type="StyleBox" id=7]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Enemy/Boss-Fond.tres" type="StyleBox" id=8]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Enemy/Boss-Fond.png" type="Texture" id=9]
-[ext_resource path="res://ASSETS/LANG/FONTS/NotoSans/NotoSans-Bold.ttf" type="DynamicFontData" id=10]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Commands/Commands_Lr_010.png" type="Texture" id=11]
+[ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Player/HP-bar.png" type="Texture" id=5]
+[ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Enemy/Boss-Barr-vert.tres" type="StyleBox" id=6]
+[ext_resource path="res://SCRIPTS/Battle/HUD/EnemyHP.gd" type="Script" id=7]
+[ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Enemy/Boss-Barr-rouge.tres" type="StyleBox" id=8]
+[ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Enemy/Boss-Fond.tres" type="StyleBox" id=9]
+[ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Enemy/Boss-Fond.png" type="Texture" id=10]
+[ext_resource path="res://ASSETS/LANG/FONTS/NotoSans/NotoSans-Bold.ttf" type="DynamicFontData" id=11]
+[ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Commands/Commands_Lr_010.png" type="Texture" id=12]
 
 [sub_resource type="StyleBoxFlat" id=1]
 
@@ -38,7 +39,7 @@ content_margin/left = -1.0
 content_margin/right = -1.0
 content_margin/top = -1.0
 content_margin/bottom = -1.0
-texture = ExtResource( 9 )
+texture = ExtResource( 10 )
 margin/left = 2.0
 margin/right = 2.0
 margin/top = 2.0
@@ -54,7 +55,7 @@ draw_center = true
 font/size = 9
 font/use_mipmaps = false
 font/use_filter = false
-font/font = ExtResource( 10 )
+font/font = ExtResource( 11 )
 
 [node name="HUD" type="Control"]
 
@@ -135,7 +136,7 @@ script/script = ExtResource( 3 )
 __meta__ = {
 "_editor_icon": ExtResource( 4 )
 }
-border_size = 5
+border_size = 3
 border_overlap = 0
 border_color = Color( 0, 0, 0, 1 )
 border_textures = null
@@ -153,10 +154,10 @@ smooth_max_angle = 96
 material/use_parent = true
 polygon = Vector2Array( 19, 54.5, 19.2119, 50.1872, 19.8454, 45.916, 20.8946, 41.7275, 22.3493, 37.6619, 24.1955, 33.7585, 26.4153, 30.0549, 28.9875, 26.5867, 31.8873, 23.3873, 35.0867, 20.4875, 38.5549, 17.9153, 42.2585, 15.6955, 46.1619, 13.8493, 50.2275, 12.3946, 54.416, 11.3454, 58.6872, 10.7119, 63, 10.5, 67.3128, 10.7119, 71.584, 11.3454, 75.7725, 12.3946, 79.8381, 13.8493, 83.7415, 15.6955, 87.4451, 17.9153, 90.9133, 20.4875, 94.1127, 23.3873, 79.9706, 37.5294, 78.2254, 35.9478, 76.3337, 34.5447, 74.3135, 33.3339, 72.1844, 32.3269, 69.9668, 31.5334, 67.6822, 30.9612, 65.3524, 30.6156, 63, 30.5, 60.6476, 30.6156, 58.3178, 30.9612, 56.0332, 31.5334, 53.8156, 32.3269, 51.6865, 33.3339, 49.6663, 34.5447, 47.7746, 35.9478, 46.0294, 37.5294, 44.4478, 39.2746, 43.0447, 41.1663, 41.8339, 43.1865, 40.8269, 45.3156, 40.0334, 47.5332, 39.4612, 49.8178, 39.1156, 52.1476, 39, 54.5 )
 uv = Vector2Array(  )
-color = Color( 0, 1, 0, 1 )
+color = Color( 1, 1, 1, 1 )
 vertex_colors = ColorArray(  )
 offset = Vector2( 0, 0 )
-texture/texture = null
+texture/texture = ExtResource( 5 )
 texture/offset = Vector2( 0, 0 )
 texture/scale = Vector2( 1, 1 )
 texture/rotation = 0.0
@@ -259,7 +260,7 @@ margin/left = 40.0
 margin/top = 10.0
 margin/right = -275.0
 margin/bottom = 20.0
-custom_styles/fg = ExtResource( 5 )
+custom_styles/fg = ExtResource( 6 )
 custom_styles/bg = SubResource( 2 )
 range/min = 0.0
 range/max = 100.0
@@ -269,7 +270,7 @@ range/value = 100.0
 range/exp_edit = false
 range/rounded = true
 percent/visible = false
-script/script = ExtResource( 6 )
+script/script = ExtResource( 7 )
 SLIDE_DURATION = 0.5
 DELAY_DURATION = 0.5
 
@@ -321,8 +322,8 @@ margin/left = 0.0
 margin/top = 0.0
 margin/right = 0.0
 margin/bottom = 10.0
-custom_styles/fg = ExtResource( 7 )
-custom_styles/bg = ExtResource( 8 )
+custom_styles/fg = ExtResource( 8 )
+custom_styles/bg = ExtResource( 9 )
 range/min = 0.0
 range/max = 100.0
 range/step = 1.0
@@ -384,7 +385,7 @@ transform/pos = Vector2( 0, 448 )
 [node name="Selected" type="Sprite" parent="Commands"]
 
 editor/display_folded = true
-texture = ExtResource( 11 )
+texture = ExtResource( 12 )
 centered = false
 
 [node name="BATTLE_ATTACK" type="Label" parent="Commands/Selected"]
