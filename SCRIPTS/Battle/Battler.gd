@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 # Signals
-signal zero_hp
+signal defeated
 
 # Classes
 const BattlerStats = preload("res://SCRIPTS/RPG/Stats/BattlerStats.gd")

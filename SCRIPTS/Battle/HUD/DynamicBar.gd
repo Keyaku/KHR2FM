@@ -5,6 +5,8 @@ extends ProgressBar
 # A representation and partial dataholder for stuff like Health bars
 ################################################################################
 
+# Signals
+signal zero
 
 # Exported values
 export(float, 0, 5, 0.1) var SLIDE_DURATION = 0.5
@@ -21,10 +23,19 @@ func _ready():
 	SlideAnim.set_repeat(false)
 	add_child(SlideAnim)
 
+	connect("value_changed", self, "_check_for_zero")
+
 func _slide(target):
 	SlideAnim.stop_all()
 	SlideAnim.interpolate_method(target, "set_value", target.get_value(), get_value(), SLIDE_DURATION, Tween.TRANS_LINEAR, Tween.EASE_OUT, DELAY_DURATION)
 	SlideAnim.start()
+
+#######################
+### Signal routines ###
+#######################
+func _check_for_zero(value):
+	if value <= 0:
+		emit_signal("zero")
 
 ###############
 ### Methods ###
