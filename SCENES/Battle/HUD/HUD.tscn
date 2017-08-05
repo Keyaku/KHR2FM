@@ -1,17 +1,18 @@
-[gd_scene load_steps=17 format=1]
+[gd_scene load_steps=18 format=1]
 
 [ext_resource path="res://SCRIPTS/Battle/HUD/HUD.gd" type="Script" id=1]
-[ext_resource path="res://SCRIPTS/RoundProgress.gd" type="Script" id=2]
+[ext_resource path="res://SCRIPTS/Battle/HUD/PlayerHP.gd" type="Script" id=2]
 [ext_resource path="res://addons/bordered-polygon-2d/bordered_polygon_2d.gd" type="Script" id=3]
 [ext_resource path="res://addons/bordered-polygon-2d/icon.png" type="Texture" id=4]
 [ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Player/HP-bar.png" type="Texture" id=5]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Enemy/Boss-Barr-vert.tres" type="StyleBox" id=6]
-[ext_resource path="res://SCRIPTS/Battle/HUD/EnemyHP.gd" type="Script" id=7]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Enemy/Boss-Barr-rouge.tres" type="StyleBox" id=8]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Enemy/Boss-Fond.tres" type="StyleBox" id=9]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Enemy/Boss-Fond.png" type="Texture" id=10]
-[ext_resource path="res://ASSETS/LANG/FONTS/NotoSans/NotoSans-Bold.ttf" type="DynamicFontData" id=11]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Commands/Commands_Lr_010.png" type="Texture" id=12]
+[ext_resource path="res://ASSETS/SE/Battle/General/Pinch.ogg" type="AudioStream" id=6]
+[ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Enemy/Boss-Barr-vert.tres" type="StyleBox" id=7]
+[ext_resource path="res://SCRIPTS/Battle/HUD/EnemyHP.gd" type="Script" id=8]
+[ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Enemy/Boss-Barr-rouge.tres" type="StyleBox" id=9]
+[ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Enemy/Boss-Fond.tres" type="StyleBox" id=10]
+[ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Enemy/Boss-Fond.png" type="Texture" id=11]
+[ext_resource path="res://ASSETS/LANG/FONTS/NotoSans/NotoSans-Bold.ttf" type="DynamicFontData" id=12]
+[ext_resource path="res://ASSETS/GFX/Game/Battle/HUD/Commands/Commands_Lr_010.png" type="Texture" id=13]
 
 [sub_resource type="StyleBoxFlat" id=1]
 
@@ -39,7 +40,7 @@ content_margin/left = -1.0
 content_margin/right = -1.0
 content_margin/top = -1.0
 content_margin/bottom = -1.0
-texture = ExtResource( 10 )
+texture = ExtResource( 11 )
 margin/left = 2.0
 margin/right = 2.0
 margin/top = 2.0
@@ -55,7 +56,7 @@ draw_center = true
 font/size = 9
 font/use_mipmaps = false
 font/use_filter = false
-font/font = ExtResource( 11 )
+font/font = ExtResource( 12 )
 
 [node name="HUD" type="Control"]
 
@@ -84,25 +85,24 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 0.65
-margin/top = 0.7
+margin/left = 0.649883
+margin/top = 0.604167
 margin/right = 0.0
 margin/bottom = 0.0
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="HP" type="Range" parent="Player"]
 
 editor/display_folded = true
+anchor/right = 1
+anchor/bottom = 1
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 114.0
-margin/top = 31.0
-margin/right = 240.0
-margin/bottom = 140.0
+margin/left = 131.0
+margin/top = 51.0
+margin/right = 0.0
+margin/bottom = 0.0
 range/min = 0.0
 range/max = 150.0
 range/step = 1.0
@@ -117,11 +117,13 @@ __meta__ = {
 background_polygon = NodePath("bg")
 foreground_polygon = NodePath("fg")
 thickness = 20
+player_face = null
+frame = 0
 
 [node name="bg" type="Polygon2D" parent="Player/HP"]
 
 visibility/self_opacity = 0.0
-polygon = Vector2Array( 19, 54.5, 19.8454, 45.916, 22.3493, 37.6619, 26.4153, 30.0549, 31.8873, 23.3873, 38.5549, 17.9153, 46.1619, 13.8493, 54.416, 11.3454, 63, 10.5, 71.584, 11.3454, 79.8381, 13.8493, 87.4451, 17.9153, 94.1127, 23.3873, 99.5847, 30.0549, 103.651, 37.6619, 106.155, 45.916, 107, 54.5, 106.155, 63.084, 103.651, 71.3381, 99.5847, 78.9451, 94.1127, 85.6127, 87.4451, 91.0847, 79.8381, 95.1507, 71.584, 97.6546, 63, 98.5, 12.9, 98.5, 12.8, 98.5, 12.8, 78.5, 12.9, 78.5, 63, 78.5, 67.6822, 78.0388, 72.1844, 76.6731, 76.3337, 74.4553, 79.9706, 71.4706, 82.9553, 67.8337, 85.1731, 63.6844, 86.5388, 59.1822, 87, 54.5, 86.5388, 49.8178, 85.1731, 45.3156, 82.9553, 41.1663, 79.9706, 37.5294, 76.3337, 34.5447, 72.1844, 32.3269, 67.6822, 30.9612, 63, 30.5, 58.3178, 30.9612, 53.8156, 32.3269, 49.6663, 34.5447, 46.0294, 37.5294, 43.0447, 41.1663, 40.8269, 45.3156, 39.4612, 49.8178, 39, 54.5 )
+polygon = Vector2Array( 25, 69.4999, 26.1336, 57.9896, 29.4911, 46.9216, 34.9433, 36.7213, 42.2807, 27.7806, 51.2213, 20.4432, 61.4216, 14.991, 72.4896, 11.6336, 84, 10.4999, 95.5103, 11.6336, 106.578, 14.991, 116.779, 20.4432, 125.719, 27.7806, 133.057, 36.7213, 138.509, 46.9216, 141.866, 57.9896, 143, 69.4999, 141.866, 81.0103, 138.509, 92.0782, 133.057, 102.279, 125.719, 111.219, 116.779, 118.557, 106.578, 124.009, 95.5103, 127.366, 84, 128.5, 33.9, 128.5, 33.8, 128.5, 33.8, 108.5, 33.9, 108.5, 84, 108.5, 91.6085, 107.751, 98.9246, 105.531, 105.667, 101.927, 111.577, 97.0771, 116.427, 91.1672, 120.031, 84.4246, 122.251, 77.1084, 123, 69.4999, 122.251, 61.8914, 120.031, 54.5753, 116.427, 47.8327, 111.577, 41.9228, 105.667, 37.0726, 98.9246, 33.4686, 91.6085, 31.2493, 84, 30.4999, 76.3914, 31.2493, 69.0753, 33.4686, 62.3327, 37.0726, 56.4228, 41.9228, 51.5727, 47.8327, 47.9687, 54.5753, 45.7493, 61.8914, 45, 69.4999 )
 uv = Vector2Array(  )
 color = Color( 0.2, 0.2, 0.2, 1 )
 vertex_colors = ColorArray(  )
@@ -152,7 +154,7 @@ smooth_max_angle = 96
 [node name="fg" type="Polygon2D" parent="Player/HP"]
 
 material/use_parent = true
-polygon = Vector2Array( 19, 54.5, 19.2119, 50.1872, 19.8454, 45.916, 20.8946, 41.7275, 22.3493, 37.6619, 24.1955, 33.7585, 26.4153, 30.0549, 28.9875, 26.5867, 31.8873, 23.3873, 35.0867, 20.4875, 38.5549, 17.9153, 42.2585, 15.6955, 46.1619, 13.8493, 50.2275, 12.3946, 54.416, 11.3454, 58.6872, 10.7119, 63, 10.5, 67.3128, 10.7119, 71.584, 11.3454, 75.7725, 12.3946, 79.8381, 13.8493, 83.7415, 15.6955, 87.4451, 17.9153, 90.9133, 20.4875, 94.1127, 23.3873, 79.9706, 37.5294, 78.2254, 35.9478, 76.3337, 34.5447, 74.3135, 33.3339, 72.1844, 32.3269, 69.9668, 31.5334, 67.6822, 30.9612, 65.3524, 30.6156, 63, 30.5, 60.6476, 30.6156, 58.3178, 30.9612, 56.0332, 31.5334, 53.8156, 32.3269, 51.6865, 33.3339, 49.6663, 34.5447, 47.7746, 35.9478, 46.0294, 37.5294, 44.4478, 39.2746, 43.0447, 41.1663, 41.8339, 43.1865, 40.8269, 45.3156, 40.0334, 47.5332, 39.4612, 49.8178, 39.1156, 52.1476, 39, 54.5 )
+polygon = Vector2Array( 25, 69.4999, 25.2841, 63.7169, 26.1336, 57.9896, 27.5405, 52.3731, 29.4911, 46.9216, 31.9666, 41.6875, 34.9433, 36.7213, 38.3924, 32.0707, 42.2807, 27.7806, 46.5708, 23.8923, 51.2213, 20.4432, 56.1876, 17.4666, 61.4216, 14.991, 66.8732, 13.0404, 72.4896, 11.6336, 78.217, 10.784, 84, 10.4999, 89.783, 10.784, 95.5103, 11.6336, 101.127, 13.0404, 106.578, 14.991, 111.812, 17.4666, 116.779, 20.4432, 121.429, 23.8923, 125.719, 27.7806, 111.577, 41.9228, 108.741, 39.3525, 105.667, 37.0726, 102.384, 35.105, 98.9246, 33.4686, 95.3211, 32.1792, 91.6085, 31.2493, 87.8226, 30.6877, 84, 30.4999, 80.1773, 30.6877, 76.3914, 31.2493, 72.6789, 32.1792, 69.0753, 33.4686, 65.6155, 35.105, 62.3327, 37.0726, 59.2586, 39.3525, 56.4228, 41.9228, 53.8526, 44.7586, 51.5727, 47.8327, 49.605, 51.1154, 47.9687, 54.5753, 46.6793, 58.1788, 45.7493, 61.8914, 45.1878, 65.6773, 45, 69.4999 )
 uv = Vector2Array(  )
 color = Color( 1, 1, 1, 1 )
 vertex_colors = ColorArray(  )
@@ -174,10 +176,10 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 3
 size_flags/vertical = 3
-margin/left = -27.0
-margin/top = 58.0
-margin/right = 85.0
-margin/bottom = 32.0
+margin/left = -22.0
+margin/top = 74.0
+margin/right = 121.0
+margin/bottom = 50.9998
 text = "HP / MAX"
 align = 1
 valign = 1
@@ -185,20 +187,36 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
+[node name="Face" type="Sprite" parent="Player/HP"]
+
+transform/pos = Vector2( 84, 69.4999 )
+z/z = 1
+hframes = 3
+
+[node name="Alarm" type="StreamPlayer" parent="Player/HP"]
+
+stream/stream = ExtResource( 6 )
+stream/play = false
+stream/loop = true
+stream/volume_db = 0.0
+stream/autoplay = false
+stream/paused = false
+stream/loop_restart_time = 0.0
+stream/buffering_ms = 500
+
 [node name="MP" type="ProgressBar" parent="Player"]
 
 editor/display_folded = true
 anchor/left = 1
-anchor/bottom = 1
 rect/min_size = Vector2( 165, 12 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 204.0
-margin/top = 10.0
-margin/right = 259.0
-margin/bottom = 116.0
+margin/left = 283.0
+margin/top = 139.0
+margin/right = 181.0
+margin/bottom = 157.0
 custom_styles/fg = SubResource( 1 )
 range/min = 0.0
 range/max = 100.0
@@ -260,7 +278,7 @@ margin/left = 40.0
 margin/top = 10.0
 margin/right = -275.0
 margin/bottom = 20.0
-custom_styles/fg = ExtResource( 6 )
+custom_styles/fg = ExtResource( 7 )
 custom_styles/bg = SubResource( 2 )
 range/min = 0.0
 range/max = 100.0
@@ -270,7 +288,7 @@ range/value = 100.0
 range/exp_edit = false
 range/rounded = true
 percent/visible = false
-script/script = ExtResource( 7 )
+script/script = ExtResource( 8 )
 SLIDE_DURATION = 0.5
 DELAY_DURATION = 0.5
 
@@ -322,8 +340,8 @@ margin/left = 0.0
 margin/top = 0.0
 margin/right = 0.0
 margin/bottom = 10.0
-custom_styles/fg = ExtResource( 8 )
-custom_styles/bg = ExtResource( 9 )
+custom_styles/fg = ExtResource( 9 )
+custom_styles/bg = ExtResource( 10 )
 range/min = 0.0
 range/max = 100.0
 range/step = 1.0
@@ -385,7 +403,7 @@ transform/pos = Vector2( 0, 448 )
 [node name="Selected" type="Sprite" parent="Commands"]
 
 editor/display_folded = true
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
 centered = false
 
 [node name="BATTLE_ATTACK" type="Label" parent="Commands/Selected"]

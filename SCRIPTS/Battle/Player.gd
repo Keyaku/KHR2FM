@@ -10,6 +10,9 @@ enum {
 	ACT_ACCEPT = 0x10, ACT_CANCEL = 0x20,
 }
 
+# Export values
+export(Texture) var face
+
 # Instance members
 onready var AnimMovement   = get_node("movement")
 onready var AnimMethodical = get_node("methodical")
@@ -45,6 +48,7 @@ func _ready():
 		})
 	if HUD != null:
 		HUD.set_player_stats(stats)
+		HUD.player.hp.set_player_face(face)
 
 	# Connecting signals
 	AnimMethodical.connect("animation_started", self, "_action_started")

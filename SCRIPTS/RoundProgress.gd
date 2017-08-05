@@ -17,6 +17,7 @@ var bg # Background Polygon2D
 var fg # Foreground Polygon2D
 
 # "Private" members
+var center
 var half_thickness
 
 ########################
@@ -41,6 +42,7 @@ func set_thickness(value):
 ### Core functions ###
 ######################
 func _ready():
+	center = get_size() * 0.5
 	reset_polygons()
 
 	connect("changed", self, "_draw_both")
@@ -48,6 +50,7 @@ func _ready():
 
 # Overloading functions
 func _draw():
+	center = get_size() * 0.5
 	if get_tree().is_editor_hint():
 		reset_polygons()
 		_draw_both()
@@ -61,7 +64,6 @@ func _draw_progress_bar(polygon, value):
 		polygon.set_polygon(Vector2Array())
 
 	var radius = (int(min(get_size().x, get_size().y)) >> 1) - thickness
-	var center = get_size() * 0.5
 
 	var points = get_progress_bar(center, radius, value)
 	polygon.set_polygon(points)
