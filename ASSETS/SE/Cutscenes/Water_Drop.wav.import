@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Water_Drop.wav-48830654af15d138582f78ef0da4e959.sample"
+
+[deps]
+
+source_file="res://ASSETS/SE/Cutscenes/Water_Drop.wav"
+dest_files=[ "res://.import/Water_Drop.wav-48830654af15d138582f78ef0da4e959.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

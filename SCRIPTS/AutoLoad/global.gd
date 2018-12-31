@@ -156,3 +156,4 @@ func pause_game(value=!get_tree().is_paused()):
 	# Toggle pause and signal that it's been toggled
 	get_tree().set_pause(value)
 	emit_signal("toggled_pause")
+

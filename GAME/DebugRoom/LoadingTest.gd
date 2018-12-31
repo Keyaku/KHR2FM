@@ -81,3 +81,4 @@ func background3():
 # Foreground tests
 func foreground0():
 	SceneLoader.load_scene("res://GAME/STORY/Intro/Battle_Yuugure.tscn")
+

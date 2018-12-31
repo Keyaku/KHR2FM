@@ -35,3 +35,4 @@ func _fullscreen_pressed(pressed):
 	fullscreen.set_text(tr("SETTINGS_FULLSCREEN") + " " +
 		tr("ON" if on else "OFF")
 	)
+

@@ -1,41 +1,41 @@
-[gd_scene load_steps=38 format=1]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://SCRIPTS/Battle/Enemy.gd" type="Script" id=1]
-[ext_resource path="res://ASSETS/SE/Battle/Yuugure/Yuugure_00.wav" type="Sample" id=2]
-[ext_resource path="res://ASSETS/SE/Battle/Yuugure/Yuugure_01.wav" type="Sample" id=3]
-[ext_resource path="res://ASSETS/SE/Battle/Yuugure/Yuugure_02.wav" type="Sample" id=4]
-[ext_resource path="res://ASSETS/SE/Battle/Yuugure/Yuugure_03.wav" type="Sample" id=5]
-[ext_resource path="res://ASSETS/SE/Battle/Yuugure/Yuugure_04.wav" type="Sample" id=6]
-[ext_resource path="res://ASSETS/SE/Battle/Yuugure/Yuugure_05.wav" type="Sample" id=7]
-[ext_resource path="res://ASSETS/SE/Battle/Yuugure/Yuugure_06.wav" type="Sample" id=8]
-[ext_resource path="res://ASSETS/SE/Battle/Yuugure/Yuugure_07.wav" type="Sample" id=9]
-[ext_resource path="res://ASSETS/SE/Battle/Yuugure/Yuugure_08.wav" type="Sample" id=10]
-[ext_resource path="res://ASSETS/SE/Battle/Yuugure/Yuugure_09.wav" type="Sample" id=11]
-[ext_resource path="res://ASSETS/SE/Battle/Yuugure/Yuugure_10.wav" type="Sample" id=12]
-[ext_resource path="res://ASSETS/SE/Battle/Yuugure/Yuugure_11.wav" type="Sample" id=13]
-[ext_resource path="res://ASSETS/SE/Battle/Yuugure/Yuugure_12.wav" type="Sample" id=14]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/Enemies/Yuugure/Yuugure_000.png" type="Texture" id=15]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/Enemies/Yuugure/Yuugure_001.png" type="Texture" id=16]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/Enemies/Yuugure/Yuugure_002.png" type="Texture" id=17]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/Enemies/Yuugure/Yuugure_003.png" type="Texture" id=18]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/Enemies/Yuugure/Yuugure_004.png" type="Texture" id=19]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/Enemies/Yuugure/Yuugure_005.png" type="Texture" id=20]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/Enemies/Yuugure/Yuugure_006.png" type="Texture" id=21]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/Enemies/Yuugure/Yuugure_007.png" type="Texture" id=22]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/Enemies/Yuugure/Yuugure_008.png" type="Texture" id=23]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/Enemies/Yuugure/Yuugure_009.png" type="Texture" id=24]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/Enemies/Yuugure/Yuugure_010.png" type="Texture" id=25]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/Enemies/Yuugure/Yuugure_011.png" type="Texture" id=26]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/Enemies/Yuugure/Yuugure_012.png" type="Texture" id=27]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/Enemies/Yuugure/Yuugure_013.png" type="Texture" id=28]
-[ext_resource path="res://ASSETS/GFX/Game/Battle/Enemies/Yuugure/Yuugure_013b.png" type="Texture" id=29]
+[ext_resource path="" type="Sample" id=2]
+[ext_resource path="" type="Sample" id=3]
+[ext_resource path="" type="Sample" id=4]
+[ext_resource path="" type="Sample" id=5]
+[ext_resource path="" type="Sample" id=6]
+[ext_resource path="" type="Sample" id=7]
+[ext_resource path="" type="Sample" id=8]
+[ext_resource path="" type="Sample" id=9]
+[ext_resource path="" type="Sample" id=10]
+[ext_resource path="" type="Sample" id=11]
+[ext_resource path="" type="Sample" id=12]
+[ext_resource path="" type="Sample" id=13]
+[ext_resource path="" type="Sample" id=14]
+[ext_resource path="" type="Texture" id=15]
+[ext_resource path="" type="Texture" id=16]
+[ext_resource path="" type="Texture" id=17]
+[ext_resource path="" type="Texture" id=18]
+[ext_resource path="" type="Texture" id=19]
+[ext_resource path="" type="Texture" id=20]
+[ext_resource path="" type="Texture" id=21]
+[ext_resource path="" type="Texture" id=22]
+[ext_resource path="" type="Texture" id=23]
+[ext_resource path="" type="Texture" id=24]
+[ext_resource path="" type="Texture" id=25]
+[ext_resource path="" type="Texture" id=26]
+[ext_resource path="" type="Texture" id=27]
+[ext_resource path="" type="Texture" id=28]
+[ext_resource path="" type="Texture" id=29]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 25, 45 )
 
-[sub_resource type="SampleLibrary" id=2]
+[sub_resource type="Resource" id=2]
 
 samples/Yuugure_00 = {
 "db": 0.0,
@@ -135,8 +135,8 @@ tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 1.4 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 1.4 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 0, 0 ]
 }
@@ -151,8 +151,8 @@ tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 0.1 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 1, 10 ]
 }
@@ -161,8 +161,8 @@ tracks/1/path = NodePath("Voice:play/play")
 tracks/1/interp = 1
 tracks/1/imported = false
 tracks/1/keys = {
-"times": FloatArray( 0 ),
-"transitions": FloatArray( 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 2,
 "values": [ "Yuugure_03" ]
 }
@@ -171,8 +171,8 @@ tracks/2/path = NodePath(".")
 tracks/2/interp = 1
 tracks/2/imported = false
 tracks/2/keys = {
-"times": FloatArray( 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9 ),
-"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "values": [ {
 "args": [ Vector2( 70, 0 ) ],
 "method": "move"
@@ -213,8 +213,8 @@ tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 0.3, 0.6 ),
-"transitions": FloatArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
 "values": [ 2, 3, 4 ]
 }
@@ -223,10 +223,10 @@ tracks/1/path = NodePath(".")
 tracks/1/interp = 1
 tracks/1/imported = false
 tracks/1/keys = {
-"times": FloatArray( 0.6 ),
-"transitions": FloatArray( 1 ),
+"times": PoolRealArray( 0.6 ),
+"transitions": PoolRealArray( 1 ),
 "values": [ {
-"args": [ StringArray( "Yuugure_04", "Yuugure_11" ) ],
+"args": [ PoolStringArray( "Yuugure_04", "Yuugure_11" ) ],
 "method": "random_voice"
 } ]
 }
@@ -235,8 +235,8 @@ tracks/2/path = NodePath(".")
 tracks/2/interp = 1
 tracks/2/imported = false
 tracks/2/keys = {
-"times": FloatArray( 0.6, 0.7 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0.6, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
 "values": [ {
 "args": [ Vector2( 10, 0 ) ],
 "method": "move"
@@ -256,8 +256,8 @@ tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 0.3, 3 ),
-"transitions": FloatArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.3, 3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
 "values": [ 6, 13, 14 ]
 }
@@ -266,8 +266,8 @@ tracks/1/path = NodePath("Voice:play/play")
 tracks/1/interp = 1
 tracks/1/imported = false
 tracks/1/keys = {
-"times": FloatArray( 0 ),
-"transitions": FloatArray( 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 2,
 "values": [ "Yuugure_00" ]
 }
@@ -276,8 +276,8 @@ tracks/2/path = NodePath(".")
 tracks/2/interp = 1
 tracks/2/imported = false
 tracks/2/keys = {
-"times": FloatArray( 0.1, 0.2, 0.3, 0.4, 0.5 ),
-"transitions": FloatArray( 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "values": [ {
 "args": [ Vector2( 0, -40 ) ],
 "method": "move"
@@ -300,13 +300,13 @@ tracks/3/path = NodePath(".")
 tracks/3/interp = 1
 tracks/3/imported = false
 tracks/3/keys = {
-"times": FloatArray( 0.5, 3 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0.5, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
 "values": [ {
-"args": [ StringArray( "Yuugure_06", "Yuugure_05" ) ],
+"args": [ PoolStringArray( "Yuugure_06", "Yuugure_05" ) ],
 "method": "random_voice"
 }, {
-"args": [ StringArray( "Yuugure_11", "Yuugure_12" ) ],
+"args": [ PoolStringArray( "Yuugure_11", "Yuugure_12" ) ],
 "method": "random_voice"
 } ]
 }
@@ -321,8 +321,8 @@ tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 1.5 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 2, 8 ]
 }
@@ -331,24 +331,24 @@ tracks/1/path = NodePath(".")
 tracks/1/interp = 1
 tracks/1/imported = false
 tracks/1/keys = {
-"times": FloatArray( 1.5 ),
-"transitions": FloatArray( 1 ),
+"times": PoolRealArray( 1.5 ),
+"transitions": PoolRealArray( 1 ),
 "values": [ {
-"args": [ StringArray( "Yuugure_03", "Yuugure_04" ) ],
+"args": [ PoolStringArray( "Yuugure_03", "Yuugure_04" ) ],
 "method": "random_voice"
 } ]
 }
 
 [node name="Yuugure" type="KinematicBody2D"]
 
-input/pickable = false
+input_pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = true
-collision/layers = 1
-collision/mask = 1
-collision/margin = 0.08
-script/script = ExtResource( 1 )
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
 battler_speed = 100
 override_stats = false
 max_health = 100
@@ -358,13 +358,13 @@ defense = 1
 enemy_instances = 1
 random_instances = false
 
-[node name="Voice" type="SamplePlayer2D" parent="."]
+[node name="Voice" type="AudioStreamPlayer2D" parent="."]
 
-params/volume_db = 0.0
-params/pitch_scale = 1.0
-params/attenuation/min_distance = 1.0
-params/attenuation/max_distance = 1024.0
-params/attenuation/distance_exp = 1.0
+volume_db = 0.0
+pitch_scale = 1.0
+attenuation_min_distance = 1.0
+attenuation_max_distance = 1024.0
+attenuation_distance_exp = 1.0
 config/polyphony = 1
 config/samples = SubResource( 2 )
 config/pitch_random = 0.0
@@ -382,27 +382,25 @@ animation = "default"
 
 [node name="movement" type="AnimationPlayer" parent="."]
 
-playback/process_mode = 1
-playback/default_blend_time = 0.0
-root/root = NodePath("..")
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
 anims/Still = SubResource( 4 )
 anims/Walk = SubResource( 5 )
-playback/active = true
-playback/speed = 3.0
+playback_active = true
+playback_speed = 3.0
 blend_times = [  ]
 autoplay = ""
 
 [node name="attack" type="AnimationPlayer" parent="."]
 
-playback/process_mode = 1
-playback/default_blend_time = 0.0
-root/root = NodePath("..")
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
 anims/Attack1 = SubResource( 6 )
 anims/Attack2 = SubResource( 7 )
 anims/Attack3 = SubResource( 8 )
-playback/active = true
-playback/speed = 3.0
+playback_active = true
+playback_speed = 3.0
 blend_times = [  ]
 autoplay = ""
-
-

@@ -71,3 +71,4 @@ func _ready():
 	# Load next scene
 	SceneLoader.transition("Battle")
 	SceneLoader.load_next_scene()
+

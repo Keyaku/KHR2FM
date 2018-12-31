@@ -1,12 +1,12 @@
-[gd_scene load_steps=2 format=1]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://SCRIPTS/Map/MapPlan.gd" type="Script" id=1]
 
 [node name="Height" type="YSort"]
 
-process/pause_mode = 1
-sort/enabled = true
-script/script = ExtResource( 1 )
+pause_mode = 1
+sort_enabled = true
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -19,5 +19,3 @@ centered = false
 __meta__ = {
 "_edit_lock_": true
 }
-
-

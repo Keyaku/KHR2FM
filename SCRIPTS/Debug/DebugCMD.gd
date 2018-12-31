@@ -92,3 +92,4 @@ func _CommandBox_input(event):
 			HistoryList.idx -= 1
 		elif down && HistoryList.idx < size - 1:
 			HistoryList.idx += 1
+

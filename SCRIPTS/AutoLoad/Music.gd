@@ -1,4 +1,4 @@
-extends StreamPlayer
+extends AudioStreamPlayer  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 
 # Signals
 signal end_fade
@@ -67,3 +67,4 @@ func fade_in(time):
 
 func fade_out(time):
 	fade(time, get_current_volume(), VOL_MUTE)
+

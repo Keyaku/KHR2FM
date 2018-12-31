@@ -49,7 +49,7 @@ func set_max(value):
 	for idx in range(max_layers):
 		var layer = OneLayer.instance()
 		Layers.add_child(layer)
-		layer.set_pos(Vector2(idx * layer.get_size().x, 0))
+		layer.set_position(Vector2(idx * layer.get_size().x, 0))  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 
 func get_max():
 	return maximum
@@ -99,3 +99,4 @@ static func split(value):
 		num_layers -= 1
 
 	return [current_val, num_layers]
+

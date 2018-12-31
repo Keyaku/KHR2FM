@@ -1,4 +1,4 @@
-extends SamplePlayer
+extends Node  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 
 
 ######################
@@ -16,3 +16,4 @@ func _ready():
 func set_default_volume(value):
 	KHR2.config.set_value("sound", "volume", value)
 	AS.set_fx_global_volume_scale(value)
+

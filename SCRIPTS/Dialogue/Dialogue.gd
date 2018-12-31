@@ -72,7 +72,7 @@ func _input(event):
 			confirm()
 
 	# Touch events
-	elif event.type == InputEvent.SCREEN_TOUCH:
+	elif event is InputEventScreenTouch:  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 		confirm()
 
 #######################
@@ -83,9 +83,9 @@ func _on_CastAnim_complete(object, key):
 		var avatar = object
 
 		# If object's opacity is 0, it's been dismissed
-		if key == "set_opacity" && avatar.get_opacity() == 0:
+		if key == "set_opacity" && avatar.modulate.a == 0:  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 			avatar.hide()
-			avatar.set_opacity(1.0)
+			avatar.modulate.a = 1.0  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 
 func _next_line():
 	if is_loaded(): # Fetch next line
@@ -169,14 +169,14 @@ func speak(character, begin, end=begin):
 
 	# If character's invisible, make grand appearance
 	if character.has_sprite():
-		if (character.is_hidden() || character.get_opacity() == 0) && !character.stay_hidden:
+		if (character.is_hidden() || character.modulate.a == 0) && !character.stay_hidden:  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 			display(character)
 			yield(CastAnim, "tween_complete")
 
 	# Centering hook (if necessary)
 	if Bubble.get_box() != -1:
 		Bubble.set_hook()
-		Bubble.set_hook_pos(character.get_center())
+		Bubble.set_hook_position(character.get_center())  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 
 	# Finally, get the speaker's line
 	call_deferred("_next_line")
@@ -205,7 +205,7 @@ func silence(character=null):
 # Displays only ONE Avatar
 func display(character):
 	# Setting character visibility
-	character.set_opacity(0)
+	character.modulate.a = 0  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 	character.show()
 
 	CastAnim.interpolate_method(
@@ -254,3 +254,4 @@ func close():
 	yield(CastAnim, "tween_complete")
 
 	emit_signal("finished")
+

@@ -67,3 +67,4 @@ func confirm_choice(yes):
 	if cursor_idx == SAVEPOINT_WORLD:
 		# TODO: Load World Map
 		Menu[cursor_idx].anims.play("Fade Out")
+

@@ -52,7 +52,7 @@ func _ready():
 	KHR2.move_child(HUD, 0)
 	start()
 
-func _fixed_process(delta):
+func _physics_process(delta):  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 	# Grabbing directions from Input and transforming them into flags
 	var directions = int(Input.is_action_pressed(sprite_direction[SPR_UP]))    << 0
 	directions    |= int(Input.is_action_pressed(sprite_direction[SPR_DOWN]))  << 1
@@ -88,13 +88,13 @@ func _animate_character(directions):
 func _move_character(directions, delta=0):
 	var motion = sprite_motion[directions]
 	motion = motion.normalized() * MOTION_SPEED * delta
-	motion = move(motion)
+	motion = move_and_collide(motion)  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 
 	# Make character slide when collisions are detected
 	var slide_attempts = 4
 	while is_colliding() and slide_attempts > 0:
 		motion = get_collision_normal().slide(motion)
-		motion = move(motion)
+		motion = move_and_collide(motion)  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 		slide_attempts -= 1
 
 ###############
@@ -107,12 +107,12 @@ func is_type(type):
 	return type == get_type()
 
 func start():
-	set_fixed_process(true)
+	set_physics_process(true)  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 	set_process_input(true)
 
 func stop():
 	_stop_animation()
-	set_fixed_process(false)
+	set_physics_process(false)  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 	set_process_input(false)
 
 
@@ -141,3 +141,4 @@ func erase_interacting(body):
 	interacting.erase(body)
 	if !can_interact():
 		HUD.interact.hide()
+

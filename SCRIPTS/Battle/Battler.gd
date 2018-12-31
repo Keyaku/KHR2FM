@@ -36,12 +36,13 @@ func is_type(type):
 	return get_type() == type
 
 func set_y(y):
-	var x = get_pos().x
-	set_pos(Vector2(x, y))
+	var x = get_position().x  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
+	set_position(Vector2(x, y))  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 
 ### Battler control
 func fight():
-	set_fixed_process(true)
+	set_physics_process(true)  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 
 func at_ease():
-	set_fixed_process(false)
+	set_physics_process(false)  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
+

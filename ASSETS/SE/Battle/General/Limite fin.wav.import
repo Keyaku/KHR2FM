@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Limite fin.wav-f3bdf1b074c37d0f73c8653ecb7ddf81.sample"
+
+[deps]
+
+source_file="res://ASSETS/SE/Battle/General/Limite fin.wav"
+dest_files=[ "res://.import/Limite fin.wav-f3bdf1b074c37d0f73c8653ecb7ddf81.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

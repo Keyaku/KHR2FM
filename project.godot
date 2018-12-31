@@ -1,0 +1,86 @@
+[application]
+
+boot_bg_color = Color( 0, 0, 0, 1 )
+boot_splash/image = "res://ASSETS/GFX/bootsplash.png"
+config/auto_accept_quit = true
+config/icon = "res://ASSETS/GFX/icon.png"
+config/name = "Kingdom Hearts Rebirth 2 Final Mix"
+run/disable_stdout = false
+run/main_scene = "res://GAME/Splash/Logo.tscn"
+target_fps = 60
+use_shared_user_dir = true
+
+[autoload]
+
+KHR2 = "*res://SCRIPTS/AutoLoad/global.gd"
+Music = "*res://SCRIPTS/AutoLoad/Music.gd"
+SE = "*res://SCENES/AutoLoad/SE.tscn"
+SaveManager = "*res://SCRIPTS/AutoLoad/SaveManager/SaveManager.gd"
+SceneLoader = "*res://SCENES/AutoLoad/Loading/LoadingScreen.tscn"
+Translator = "*res://SCRIPTS/AutoLoad/Translator.gd"
+
+[debug]
+
+indicators_enabled = true
+settings/stdout/print_fps = false
+settings/stdout/verbose_stdout = false
+target_fps = 60
+
+[display]
+
+window/handheld/emulate_touchscreen = true
+window/handheld/orientation = "landscape"
+window/size/fullscreen = false
+window/size/height = 480
+window/size/resizable = true
+window/size/width = 854
+window/stretch/aspect = "keep"
+window/stretch/mode = "2d"
+
+[editor_plugins]
+
+enabled = [ "avatar", "bordered-polygon-2d", "text_scroll" ]
+
+[image_loader]
+
+filter = false
+gen_mipmaps = false
+
+[importer_defaults]
+
+texture = {
+"flags/filter": false,
+"flags/mipmaps": false
+}
+
+[input]
+
+debug = [ InputEvent(KEY,125) ]
+debug_accept = [ InputEvent(KEY,16777221) ]
+down = [ InputEvent(KEY,16777234), InputEvent(JAXIS,1,1) ]
+fast-forward = [ InputEvent(KEY,90) ]
+fullscreen = [ InputEvent(KEY,16777254), InputEvent(KEY,70,CM) ]
+left = [ InputEvent(KEY,16777231), InputEvent(JAXIS,0,-1) ]
+pause = [ InputEvent(KEY,16777217) ]
+quick_load = [ InputEvent(KEY,68,SM), InputEvent(KEY,68,SC) ]
+quick_save = [ InputEvent(KEY,83,SM), InputEvent(KEY,83,SC) ]
+reload_scene = [ InputEvent(KEY,82,SM), InputEvent(KEY,82,SC) ]
+right = [ InputEvent(KEY,16777233), InputEvent(JAXIS,0,1) ]
+ui_accept = [ InputEvent(KEY,16777221), InputEvent(KEY,16777222), InputEvent(JBUTTON,1), InputEvent(KEY,67) ]
+ui_cancel = [ InputEvent(JBUTTON,0), InputEvent(KEY,88), InputEvent(KEY,16777220), InputEvent(MBUTTON,2) ]
+ui_select = [ InputEvent(KEY,32), InputEvent(JBUTTON,3), InputEvent(KEY,90) ]
+up = [ InputEvent(KEY,16777232), InputEvent(JAXIS,1,-1) ]
+
+[locale]
+
+fallback = "en"
+translation_remaps = {
+
+}
+translations = [ "res://ASSETS/LANG/TEXT/Global/BATTLE.fr.xl", "res://ASSETS/LANG/TEXT/Global/BATTLE.en.xl", "res://ASSETS/LANG/TEXT/Global/BATTLE.es.xl", "res://ASSETS/LANG/TEXT/Global/MENU.fr.xl", "res://ASSETS/LANG/TEXT/Global/MENU.en.xl", "res://ASSETS/LANG/TEXT/Global/MENU.es.xl", "res://ASSETS/LANG/TEXT/Global/INFO.fr.xl", "res://ASSETS/LANG/TEXT/Global/INFO.en.xl", "res://ASSETS/LANG/TEXT/Global/INFO.es.xl", "res://ASSETS/LANG/TEXT/Global/WORLDS.fr.xl", "res://ASSETS/LANG/TEXT/Global/WORLDS.en.xl", "res://ASSETS/LANG/TEXT/Global/WORLDS.es.xl" ]
+
+[rendering]
+
+environment/default_clear_color = Color( 0, 0, 0, 1 )
+threads/thread_model = 2
+

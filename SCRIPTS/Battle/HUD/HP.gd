@@ -24,3 +24,4 @@ func reset_redbar(_=0):
 func resize_redbar(size, new_max):
 	RedBar.set_size(size)
 	RedBar.set_max(new_max)
+

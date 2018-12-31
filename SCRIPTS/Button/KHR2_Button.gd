@@ -26,8 +26,8 @@ func _ready():
 #######################
 func _got_focus():
 	if cursor != null:
-		var pos = get_pos() + cursor_inc
-		cursor.set_pos(pos)
+		var pos = get_position() + cursor_inc  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
+		cursor.set_position(pos)  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 
 func _play_se(event):
 	if event.is_pressed() && !event.is_echo():
@@ -58,3 +58,4 @@ func set_focus_mode(value):
 func cancel():
 	SE.play("system_dismiss")
 	emit_signal("cancel")
+

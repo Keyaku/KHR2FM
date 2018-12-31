@@ -46,7 +46,7 @@ func _ready():
 	add_child(FrameTimer)
 
 func _draw():
-	Face.set_pos(center)
+	Face.set_position(center)  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 
 	# Setting Alarm state
 	if get_unit_value() <= THRESHOLD && current_face != FACE_NEAR:
@@ -67,3 +67,4 @@ func hurt(begin=true):
 		FrameTimer.start()
 	else:
 		set_frame(current_face)
+

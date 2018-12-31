@@ -26,7 +26,7 @@ func set_csv(csv_path):
 	# Grabbing locale and locale_short version
 	var strarr = Array(csv_file.get_csv_line())
 
-	var locale = TS.get_locale()
+	var locale = TranslationServer.get_locale()
 	var locale_short = locale.split("_")[0]
 	var locale_index = strarr.find(locale)
 
@@ -53,10 +53,11 @@ func set_csv(csv_path):
 	csv_file.close() ###########################################################
 
 	# Adding translation to server
-	TS.add_translation(lines)
+	TranslationServer.add_translation(lines)
 	return true
 
 func close():
 	if lines != null:
-		TS.remove_translation(lines)
+		TranslationServer.remove_translation(lines)
 		lines = null
+

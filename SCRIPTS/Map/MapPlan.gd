@@ -22,3 +22,4 @@ func define_map():
 
 func undefine_map():
 	pass
+

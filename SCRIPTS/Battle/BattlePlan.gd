@@ -45,3 +45,4 @@ func start():
 
 func stop():
 	get_tree().call_group(0, "Battler", "at_ease")
+

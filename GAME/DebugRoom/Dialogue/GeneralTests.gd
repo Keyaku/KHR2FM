@@ -71,3 +71,4 @@ func _ready():
 	yield(Kioku, "finished")
 
 	Dialogue.hide()
+

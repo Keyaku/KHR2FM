@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Yuugure_00.wav-9154d5e4ab2bf8c81ac3a0161487ea39.sample"
+
+[deps]
+
+source_file="res://ASSETS/SE/Battle/Yuugure/Yuugure_00.wav"
+dest_files=[ "res://.import/Yuugure_00.wav-9154d5e4ab2bf8c81ac3a0161487ea39.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

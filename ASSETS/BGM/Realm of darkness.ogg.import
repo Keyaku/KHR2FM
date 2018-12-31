@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Realm of darkness.ogg-e4cff53e1ebfa16f923c5bcb357fe714.oggstr"
+
+[deps]
+
+source_file="res://ASSETS/BGM/Realm of darkness.ogg"
+dest_files=[ "res://.import/Realm of darkness.ogg-e4cff53e1ebfa16f923c5bcb357fe714.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

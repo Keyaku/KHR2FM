@@ -19,3 +19,4 @@ func _interacted():
 func _dismissed():
 	# Switching back
 	KHR2.set_pause(load(path_pause))
+

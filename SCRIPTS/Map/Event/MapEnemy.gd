@@ -47,3 +47,4 @@ func _player_untouched(area_shape):
 			yield(Delay, "timeout") # Wait until Delay is done
 		_hide()
 		Delay.start()
+

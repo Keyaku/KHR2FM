@@ -21,7 +21,7 @@ func _ready():
 	save_template.set_text("")
 
 func _recenter(button):
-	var y = int(button.get_pos().y)
+	var y = int(button.get_position().y)  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 	Scroll.interpolate_method(
 		self, "set_v_scroll", get_v_scroll(), y, 0.1,
 		Scroll.TRANS_LINEAR, Scroll.EASE_IN
@@ -106,3 +106,4 @@ func fetch_saves(cb_node, on_press, on_cancel):
 # Free all instanced save nodes
 func cleanup():
 	get_tree().call_group(0, "Saves", "queue_free")
+

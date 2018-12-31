@@ -48,3 +48,4 @@ func set(key, value):
 # so as to have more legible code when accessing this script.
 func get_scene(): return get("scene")
 func set_scene(value):   set("scene", value)
+

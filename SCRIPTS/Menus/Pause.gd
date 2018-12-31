@@ -16,4 +16,5 @@ func _pressed_pause():
 		SE.play("system_dismiss")
 
 func _toggled_pause():
-	set_hidden(!get_tree().is_paused()) # Showing screen
+	self.visible = !(!get_tree().is_paused()) # Showing screen  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
+

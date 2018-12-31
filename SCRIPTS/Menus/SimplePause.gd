@@ -35,3 +35,4 @@ func _pause_controls(button_idx):
 func set_availability(button_idx, value):
 	var button = Options.get_child(button_idx)
 	button.set_disabled(value)
+

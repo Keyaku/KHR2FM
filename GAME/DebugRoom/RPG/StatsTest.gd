@@ -132,3 +132,4 @@ func test_battle2():
 
 	print("\nCharacter successfully became a Battler")
 	new_battler.print_stats()
+

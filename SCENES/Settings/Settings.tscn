@@ -1,106 +1,107 @@
-[gd_scene load_steps=6 format=1]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://SCRIPTS/Settings/Settings.gd" type="Script" id=1]
-[ext_resource path="res://ASSETS/LANG/FONTS/KH2_menu/KH2_ALL_MENU_I.TTF" type="DynamicFontData" id=2]
+[ext_resource path="" type="DynamicFontData" id=2]
 [ext_resource path="res://SCENES/Settings/SubSlider.tscn" type="PackedScene" id=3]
 [ext_resource path="res://SCENES/Button/KHR2_Button.tscn" type="PackedScene" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 
-font/size = 30
-font/use_mipmaps = false
-font/use_filter = false
-font/font = ExtResource( 2 )
+size = 30
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 2 )
 
 [node name="Settings" type="Panel"]
 
-visibility/self_opacity = 0.7
-anchor/right = 1
-anchor/bottom = 1
+self_modulate = Color( 1, 1, 1, 0.7 )
+anchor_right = 1.0
+anchor_bottom = 1.0
 focus/ignore_mouse = false
 focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 0.0
-margin/top = 0.0
-margin/right = 0.0
-margin/bottom = 0.0
-script/script = ExtResource( 1 )
+size_flags_horizontal = 1
+size_flags_vertical = 1
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 0.0
+margin_bottom = 0.0
+script = ExtResource( 1 )
+mouse_filter = 0
 
 [node name="Title" type="Label" parent="."]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 15.0
-margin/top = 15.0
-margin/right = 253.0
-margin/bottom = 45.0
+size_flags_horizontal = 1
+size_flags_vertical = 0
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 253.0
+margin_bottom = 45.0
 custom_fonts/font = SubResource( 1 )
 text = "SETTINGS_TITLE"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+mouse_filter = 1
 
 [node name="Subsettings" type="VBoxContainer" parent="."]
 
-anchor/right = 3
-anchor/bottom = 1
+anchor_right = 0.5
+anchor_bottom = 1.0
 focus/ignore_mouse = false
 focus/stop_mouse = false
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 30.0
-margin/top = 100.0
-margin/right = 0.0
-margin/bottom = 30.0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+margin_left = 30.0
+margin_top = 100.0
+margin_right = 0.0
+margin_bottom = -30.0
 alignment = 0
+mouse_filter = 0
 
 [node name="Music" parent="Subsettings" instance=ExtResource( 3 )]
 
 editor/display_folded = true
-anchor/right = 0
-anchor/bottom = 0
-margin/right = 397.0
-margin/bottom = 151.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 397.0
+margin_bottom = 151.0
 controls = "volume"
 
 [node name="Subtitle" parent="Subsettings/Music"]
 
-margin/right = 397.0
+margin_right = 397.0
 text = "SETTINGS_MUSIC"
 
 [node name="Control" parent="Subsettings/Music"]
 
-margin/right = 397.0
+margin_right = 397.0
 
 [node name="Sound" parent="Subsettings" instance=ExtResource( 3 )]
 
 editor/display_folded = true
-anchor/right = 0
-anchor/bottom = 0
-margin/top = 155.0
-margin/right = 397.0
-margin/bottom = 306.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 155.0
+margin_right = 397.0
+margin_bottom = 306.0
 controls = "volume"
 
 [node name="Subtitle" parent="Subsettings/Sound"]
 
-margin/right = 397.0
+margin_right = 397.0
 text = "SETTINGS_SOUND"
 
 [node name="Control" parent="Subsettings/Sound"]
 
-margin/right = 397.0
+margin_right = 397.0
 
 [node name="Fullscreen" parent="Subsettings" instance=ExtResource( 4 )]
 
-margin/top = 310.0
-margin/right = 397.0
-margin/bottom = 349.0
+margin_top = 310.0
+margin_right = 397.0
+margin_bottom = 349.0
 text = "SETTINGS_FULLSCREEN"
-
-
 [editable path="Subsettings/Music"]
 [editable path="Subsettings/Sound"]

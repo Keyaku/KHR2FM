@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Appearance_boom_2.wav-4668d76d1bff2bfc0fc25e3bb1760bff.sample"
+
+[deps]
+
+source_file="res://ASSETS/SE/Cutscenes/Appearance_boom_2.wav"
+dest_files=[ "res://.import/Appearance_boom_2.wav-4668d76d1bff2bfc0fc25e3bb1760bff.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

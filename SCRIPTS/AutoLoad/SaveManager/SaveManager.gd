@@ -154,3 +154,4 @@ func quick_save():
 	current_slot.update(get_tree().get_current_scene().get_filename())
 	write_save(PATH_QUICK_SAVE, current_slot)
 	print("Quick saved!")
+

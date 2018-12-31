@@ -1,0 +1,14 @@
+[remap]
+
+importer="Theora"
+type="VideoStreamTheora"
+path="res://.import/A dream.ogv-6e06e26f452ab9b30318a7be2d132aca.ogvstr"
+
+[deps]
+
+source_file="res://ASSETS/VIDEO/A dream.ogv"
+dest_files=[ "res://.import/A dream.ogv-6e06e26f452ab9b30318a7be2d132aca.ogvstr" ]
+
+[params]
+
+loop=true

@@ -69,3 +69,4 @@ func _pressed(button):
 		hide_info()
 		yield(anims, "finished")
 		button.grab_focus()
+

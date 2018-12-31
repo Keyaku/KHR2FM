@@ -46,7 +46,7 @@ func _set(idx, value):
 		print(str(value.name), " was not set: invalid index")
 
 func _add_ability(idx, ability):
-	if not (ability extends Ability):
+	if not (ability is Ability):  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 		return
 
 	# Make room before we add it to our database
@@ -76,3 +76,4 @@ func is_valid_idx(idx):
 func set_maximum_level(value):
 	if is_array(abilities):
 		abilities.resize(max(1, value))
+

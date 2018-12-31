@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Transition.wav-2f22e7d298e9039a331be07cd079ab18.sample"
+
+[deps]
+
+source_file="res://ASSETS/SE/Battle/General/Transition.wav"
+dest_files=[ "res://.import/Transition.wav-2f22e7d298e9039a331be07cd079ab18.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

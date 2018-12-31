@@ -20,3 +20,4 @@ func _pause_controls(button_idx):
 			SceneLoader.show_next_scene(true)
 		else:
 			SceneLoader.load_next_scene()
+

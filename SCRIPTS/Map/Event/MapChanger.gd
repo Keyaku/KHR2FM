@@ -27,3 +27,4 @@ func _ready():
 
 func _player_touched(area_shape):
 	SceneLoader.load_scene(next_location)
+

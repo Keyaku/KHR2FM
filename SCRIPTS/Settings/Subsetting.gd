@@ -10,3 +10,4 @@ export(String) var controls = ""
 onready var name    = get_name().to_lower()
 onready var title   = get_node("Subtitle")
 onready var control = get_node("Control")
+

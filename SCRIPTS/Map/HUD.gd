@@ -20,3 +20,4 @@ func set_command(node, key):
 		node.set_text(COMMAND[key])
 	else:
 		node.set_text(DEFAULT)
+

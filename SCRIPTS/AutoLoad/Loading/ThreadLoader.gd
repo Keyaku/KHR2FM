@@ -39,7 +39,7 @@ func _show_progress(res):
 	mutex.lock()
 	if has_progress:
 		var progress = float()
-		if res extends ResourceInteractiveLoader:
+		if res is ResourceInteractiveLoader:  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 			progress = float(res.get_stage()) / float(res.get_stage_count())
 		else:
 			progress = 1.0
@@ -74,7 +74,7 @@ func _thread_process():
 			emit_signal("finished", path)
 		_unlock("process")
 
-func _thread_loop(_):
+func _thread_loop():
 	while !issued_kill:
 		_thread_process()
 	can_quit = true
@@ -146,7 +146,7 @@ func is_ready(path):
 
 	mutex.lock()
 	if path in pending:
-		ret = !(pending[path] extends ResourceInteractiveLoader)
+		ret = !(pending[path] is ResourceInteractiveLoader)  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 	mutex.unlock()
 
 	return ret
@@ -154,7 +154,7 @@ func is_ready(path):
 func set_progress(value):
 	_lock("set_progress")
 	has_progress = value
-	Progress.set_hidden(!value)
+	Progress.visible = !(!value)  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 	_unlock("set_progress")
 
 func set_progress_node(node):
@@ -188,11 +188,11 @@ func get_resource(path):
 	_lock("get_result")
 	if path in pending:
 		var res = pending[path]
-		if res extends ResourceInteractiveLoader:
+		if res is ResourceInteractiveLoader:  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 			if res != queue[0]:
 				# Putting res in front of queue
 				var pos = queue.find(res)
-				queue.remove(pos)
+				queue.remove_and_collide(pos)  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 				queue.push_front(res)
 
 			res = _wait_for_resource(res, path)
@@ -206,7 +206,8 @@ func get_resource(path):
 func cancel_resource(path):
 	_lock("cancel_resource")
 	if path in pending:
-		if pending[path] extends ResourceInteractiveLoader:
+		if pending[path] is ResourceInteractiveLoader:  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 			queue.erase(pending[path])
 		pending.erase(path)
 	_unlock("cancel_resource")
+

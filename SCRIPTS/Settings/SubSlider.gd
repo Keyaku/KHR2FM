@@ -19,3 +19,4 @@ func _ready():
 #######################
 func _changed(value):
 	emit_signal("changed", value)
+

@@ -92,13 +92,13 @@ func _done():
 ###############
 func set_info_size(size):
 	if size == INFO_SIZE_SMALL:
-		Info.panel.set_pos(Vector2(227, 140))
+		Info.panel.set_position(Vector2(227, 140))  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 		Info.panel.set_size(Vector2(400, 160))
 	elif size == INFO_SIZE_MEDIUM:
-		Info.panel.set_pos(Vector2(197, 120))
+		Info.panel.set_position(Vector2(197, 120))  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 		Info.panel.set_size(Vector2(460, 200))
 	elif size == INFO_SIZE_LARGE:
-		Info.panel.set_pos(Vector2(127, 120))
+		Info.panel.set_position(Vector2(127, 120))  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 		Info.panel.set_size(Vector2(600, 200))
 
 func show_info(msg, title="info"):
@@ -110,3 +110,4 @@ func show_info(msg, title="info"):
 func hide_info():
 	if Info.panel.is_visible():
 		anims.play("Hide Info")
+

@@ -18,7 +18,7 @@ var final = {}
 ######################
 func _init(copy={}):
 	if typeof(copy) != TYPE_DICTIONARY:
-		if copy extends Stats:
+		if copy is Stats:  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 			copy = copy.base
 		else:
 			copy = {}
@@ -49,7 +49,8 @@ func print_stats():
 
 # Updates all stats (or just the given one) so as to not over/underflow.
 # This is called automatically, but can be called upon request
-func update(_=null):
+func update():
 	# Calculate the rest, taking into account that these have changed
 	for stat in MAIN_STATS:
 		set(stat, min(get(stat), calculate(stat)))
+

@@ -38,3 +38,4 @@ func level_up(stat, id=""):
 		rewards = bonus_lv.get(id)
 
 	emit_signal("level_up", rewards)
+

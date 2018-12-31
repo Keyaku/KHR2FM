@@ -1,65 +1,65 @@
-[gd_scene load_steps=14 format=1]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://SCRIPTS/Dialogue/Dialogue.gd" type="Script" id=1]
 [ext_resource path="res://SCENES/Dialogue/box0.tres" type="StyleBox" id=2]
 [ext_resource path="res://SCRIPTS/Dialogue/Bubble.gd" type="Script" id=3]
-[ext_resource path="res://ASSETS/GFX/Game/Text/hook0.png" type="Texture" id=4]
-[ext_resource path="res://ASSETS/GFX/Game/Text/confirm_icon.png" type="Texture" id=5]
-[ext_resource path="res://ASSETS/LANG/FONTS/NotoSans/NotoSans-Regular.ttf" type="DynamicFontData" id=6]
-[ext_resource path="res://addons/text_scroll/TextScroll.gd" type="Script" id=7]
-[ext_resource path="res://addons/text_scroll/icon.png" type="Texture" id=8]
-[ext_resource path="res://ASSETS/SE/System/MSG_SOUND.wav" type="Sample" id=9]
+[ext_resource path="" type="Texture" id=4]
+[ext_resource path="" type="Texture" id=5]
+[ext_resource path="" type="DynamicFontData" id=6]
+[ext_resource path="" type="Script" id=7]
+[ext_resource path="" type="Texture" id=8]
+[ext_resource path="" type="Sample" id=9]
 
 [sub_resource type="Animation" id=1]
 
-resource/name = "In"
+resource_name = "In"
 length = 0.25
 loop = false
 step = 0.05
 tracks/0/type = "value"
-tracks/0/path = NodePath(".:visibility/opacity")
+tracks/0/path = NodePath(".:modulate:a")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 0.25 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 0.0, 1.0 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath(".:visibility/visible")
+tracks/1/path = NodePath(".:visible")
 tracks/1/interp = 1
 tracks/1/imported = false
 tracks/1/keys = {
-"times": FloatArray( 0 ),
-"transitions": FloatArray( 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ true ]
 }
 
 [sub_resource type="Animation" id=2]
 
-resource/name = "Out"
+resource_name = "Out"
 length = 0.25
 loop = false
 step = 0.05
 tracks/0/type = "value"
-tracks/0/path = NodePath(".:visibility/opacity")
+tracks/0/path = NodePath(".:modulate:a")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 0.25 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 1.0, 0.0 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath(".:visibility/visible")
+tracks/1/path = NodePath(".:visible")
 tracks/1/interp = 1
 tracks/1/imported = false
 tracks/1/keys = {
-"times": FloatArray( 0, 0.25 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
 }
@@ -70,36 +70,36 @@ length = 1.0
 loop = true
 step = 0.1
 tracks/0/type = "value"
-tracks/0/path = NodePath(".:margin/top")
+tracks/0/path = NodePath(".:margin_top")
 tracks/0/interp = 2
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 0.5 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 56, 67 ]
 }
 
 [sub_resource type="DynamicFont" id=4]
 
-font/size = 18
-font/use_mipmaps = false
-font/use_filter = false
-font/font = ExtResource( 6 )
+size = 18
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 6 )
 
 [node name="Dialogue" type="Control"]
 
-anchor/right = 1
-anchor/bottom = 1
+anchor_right = 1.0
+anchor_bottom = 1.0
 focus/ignore_mouse = false
 focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 0.0
-margin/top = 0.0
-margin/right = 0.0
-margin/bottom = 0.0
-script/script = ExtResource( 1 )
+size_flags_horizontal = 1
+size_flags_vertical = 1
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 0.0
+margin_bottom = 0.0
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -107,100 +107,105 @@ next_scene = ""
 csv_path = null
 position = 2
 text_effect = 1
+mouse_filter = 0
 
 [node name="CastLeft" type="HBoxContainer" parent="."]
 
-anchor/left = 2
-anchor/top = 2
-anchor/right = 2
-anchor/bottom = 1
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 1.0
 focus/ignore_mouse = false
 focus/stop_mouse = false
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 0.05
-margin/top = 0.5
-margin/right = 0.45
-margin/bottom = 20.0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+margin_left = 0.05
+margin_top = 0.5
+margin_right = 0.45
+margin_bottom = -20.0
 custom_constants/separation = 120
 alignment = 1
 __meta__ = {
 "_edit_lock_": true
 }
+mouse_filter = 0
 
 [node name="CastRight" type="HBoxContainer" parent="."]
 
-anchor/left = 2
-anchor/top = 2
-anchor/right = 2
-anchor/bottom = 1
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 1.0
 focus/ignore_mouse = false
 focus/stop_mouse = false
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 0.55
-margin/top = 0.5
-margin/right = 0.95
-margin/bottom = 20.0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+margin_left = 0.55
+margin_top = 0.5
+margin_right = 0.95
+margin_bottom = -20.0
 custom_constants/separation = 120
 alignment = 1
 __meta__ = {
 "_edit_lock_": true
 }
+mouse_filter = 0
 
 [node name="CastAnim" type="Tween" parent="."]
 
-playback/process_mode = 1
+playback_process_mode = 1
 playback/active = false
-playback/repeat = false
-playback/speed = 1.0
+playback_speed = false
+playback_speed = 1.0
 
 [node name="SkinPos" type="VBoxContainer" parent="."]
 
 editor/display_folded = true
-anchor/right = 1
-anchor/bottom = 1
-rect/min_size = Vector2( 100, 100 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 100, 100 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 42.0
-margin/top = 24.0
-margin/right = 42.0
-margin/bottom = 24.0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+margin_left = 42.0
+margin_top = 24.0
+margin_right = -42.0
+margin_bottom = -24.0
 alignment = 2
 __meta__ = {
 "_edit_lock_": true
 }
+mouse_filter = 1
 
 [node name="Bubble" type="Panel" parent="SkinPos"]
 
 editor/display_folded = true
-rect/min_size = Vector2( 100, 100 )
+rect_min_size = Vector2( 100, 100 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 0.0
-margin/top = 332.0
-margin/right = 770.0
-margin/bottom = 432.0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+margin_left = 0.0
+margin_top = 332.0
+margin_right = 770.0
+margin_bottom = 432.0
 custom_styles/panel = ExtResource( 2 )
-script/script = ExtResource( 3 )
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_lock_": true
 }
+mouse_filter = 1
 
 [node name="Fade" type="AnimationPlayer" parent="SkinPos/Bubble"]
 
-playback/process_mode = 1
-playback/default_blend_time = 0.0
-root/root = NodePath("..")
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
 anims/In = SubResource( 1 )
 anims/Out = SubResource( 2 )
-playback/active = true
-playback/speed = 1.0
+playback_active = true
+playback_speed = 1.0
 blend_times = [  ]
 autoplay = ""
 
@@ -212,54 +217,55 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="ConfirmIcon" type="Patch9Frame" parent="SkinPos/Bubble"]
+[node name="ConfirmIcon" type="NinePatchRect" parent="SkinPos/Bubble"]
 
 editor/display_folded = true
-visibility/visible = false
-anchor/left = 1
-anchor/right = 1
-anchor/bottom = 1
-rect/min_size = Vector2( 45, 59 )
+visible = false
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 45, 59 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 96.0
-margin/top = 56.0
-margin/right = 51.0
-margin/bottom = 0.0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+margin_left = -96.0
+margin_top = 56.0
+margin_right = -51.0
+margin_bottom = 0.0
 texture = ExtResource( 5 )
 __meta__ = {
 "_edit_lock_": true
 }
+mouse_filter = 1
 
 [node name="Hover" type="AnimationPlayer" parent="SkinPos/Bubble/ConfirmIcon"]
 
-playback/process_mode = 0
-playback/default_blend_time = 0.0
-root/root = NodePath("..")
+playback_process_mode = 0
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
 anims/Down_Up = SubResource( 3 )
-playback/active = false
-playback/speed = 1.0
+playback_active = false
+playback_speed = 1.0
 blend_times = [  ]
 autoplay = "Down_Up"
 
 [node name="TextContainer" type="Label" parent="SkinPos/Bubble"]
 
 editor/display_folded = true
-anchor/left = 2
-anchor/right = 2
-anchor/bottom = 1
-rect/min_size = Vector2( 60, 60 )
+anchor_left = 0.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 60, 60 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
-size_flags/horizontal = 0
-size_flags/vertical = 0
-size_flags/stretch_ratio = 0.0
-margin/left = 0.15
-margin/top = 20.0
-margin/right = 0.85
-margin/bottom = 20.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+size_flags_stretch_ratio = 0.0
+margin_left = 0.15
+margin_top = 20.0
+margin_right = 0.85
+margin_bottom = -20.0
 custom_fonts/font = SubResource( 4 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/line_spacing = 5
@@ -274,6 +280,7 @@ max_lines_visible = 2
 __meta__ = {
 "_edit_lock_": true
 }
+mouse_filter = 1
 
 [node name="TextScroll" type="Timer" parent="SkinPos/Bubble/TextContainer"]
 
@@ -281,7 +288,7 @@ process_mode = 1
 wait_time = 0.01
 one_shot = false
 autostart = false
-script/script = ExtResource( 7 )
+script = ExtResource( 7 )
 __meta__ = {
 "_editor_icon": ExtResource( 8 )
 }
@@ -289,14 +296,12 @@ text_node = NodePath("..")
 character_sound = null
 confirm_sound = ExtResource( 9 )
 
-[connection signal="draw" from="SkinPos/Bubble/ConfirmIcon" to="SkinPos/Bubble/ConfirmIcon/Hover" method="set_active" binds= [ true ]]
+[connection signal="draw" from="SkinPos/Bubble/ConfirmIcon" to="SkinPos/Bubble/ConfirmIcon/Hover" method="set_active" binds=[ true ]]
 
-[connection signal="enter_tree" from="SkinPos/Bubble/ConfirmIcon" to="SkinPos/Bubble/ConfirmIcon" method="hide"]
+[connection signal="tree_entered" from="SkinPos/Bubble/ConfirmIcon" to="SkinPos/Bubble/ConfirmIcon" method="hide" binds=[  ]]
 
-[connection signal="hide" from="SkinPos/Bubble/ConfirmIcon" to="SkinPos/Bubble/ConfirmIcon/Hover" method="set_active" binds= [ false ]]
+[connection signal="hide" from="SkinPos/Bubble/ConfirmIcon" to="SkinPos/Bubble/ConfirmIcon/Hover" method="set_active" binds=[ false ]]
 
-[connection signal="cleared" from="SkinPos/Bubble/TextContainer/TextScroll" to="SkinPos/Bubble/ConfirmIcon" method="hide"]
+[connection signal="cleared" from="SkinPos/Bubble/TextContainer/TextScroll" to="SkinPos/Bubble/ConfirmIcon" method="hide" binds=[  ]]
 
-[connection signal="finished" from="SkinPos/Bubble/TextContainer/TextScroll" to="SkinPos/Bubble/ConfirmIcon" method="show"]
-
-
+[connection signal="finished" from="SkinPos/Bubble/TextContainer/TextScroll" to="SkinPos/Bubble/ConfirmIcon" method="show" binds=[  ]]

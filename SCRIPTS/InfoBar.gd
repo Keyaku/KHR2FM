@@ -107,3 +107,4 @@ func play():
 	Slide.play("Out")
 	yield(Slide, "finished")
 	emit_signal("dismiss")
+

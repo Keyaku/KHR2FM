@@ -1,9 +1,9 @@
-[gd_scene load_steps=11 format=1]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://SCRIPTS/Map/Event/MapEnemy.gd" type="Script" id=1]
-[ext_resource path="res://ASSETS/GFX/Game/Maps/Enemies/Shadow.png" type="Texture" id=2]
-[ext_resource path="res://ASSETS/GFX/Game/Maps/Enemies/spawn.tres" type="SpriteFrames" id=3]
-[ext_resource path="res://ASSETS/SE/Battle/General/Heartless Spawn.wav" type="Sample" id=4]
+[ext_resource path="" type="Texture" id=2]
+[ext_resource path="" type="SpriteFrames" id=3]
+[ext_resource path="" type="Sample" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
 
@@ -25,8 +25,8 @@ tracks/0/path = NodePath(".:frame")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 0.5, 0.55, 1 ),
-"transitions": FloatArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.5, 0.55, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
 "values": [ 0, 9, 7, 1 ]
 }
@@ -41,8 +41,8 @@ tracks/0/path = NodePath(".:frame")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 1 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 0, 17 ]
 }
@@ -51,38 +51,38 @@ tracks/1/path = NodePath(".:animation")
 tracks/1/interp = 1
 tracks/1/imported = false
 tracks/1/keys = {
-"times": FloatArray( 0 ),
-"transitions": FloatArray( 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ "default" ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("../Sprite:visibility/opacity")
+tracks/2/path = NodePath("../Sprite:modulate:a")
 tracks/2/interp = 1
 tracks/2/imported = false
 tracks/2/keys = {
-"times": FloatArray( 0.2, 0.5 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 0.0, 1.0 ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath(".:visibility/visible")
+tracks/3/path = NodePath(".:visible")
 tracks/3/interp = 1
 tracks/3/imported = false
 tracks/3/keys = {
-"times": FloatArray( 0, 1 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("../Sprite:transform/pos")
+tracks/4/path = NodePath("../Sprite:position")
 tracks/4/interp = 1
 tracks/4/imported = false
 tracks/4/keys = {
-"times": FloatArray( 0.2, 0.5 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0, -15 ), Vector2( 0, 0 ) ]
 }
@@ -91,18 +91,18 @@ tracks/5/path = NodePath("se:play/play")
 tracks/5/interp = 1
 tracks/5/imported = false
 tracks/5/keys = {
-"times": FloatArray( 0 ),
-"transitions": FloatArray( 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 2,
 "values": [ "Heartless Spawn" ]
 }
 tracks/6/type = "value"
-tracks/6/path = NodePath("..:visibility/visible")
+tracks/6/path = NodePath("..:visible")
 tracks/6/interp = 1
 tracks/6/imported = false
 tracks/6/keys = {
-"times": FloatArray( 0 ),
-"transitions": FloatArray( 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ true ]
 }
@@ -117,8 +117,8 @@ tracks/0/path = NodePath(".:frame")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 1 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 0, 17 ]
 }
@@ -127,38 +127,38 @@ tracks/1/path = NodePath(".:animation")
 tracks/1/interp = 1
 tracks/1/imported = false
 tracks/1/keys = {
-"times": FloatArray( 0 ),
-"transitions": FloatArray( 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ "default" ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("../Sprite:visibility/opacity")
+tracks/2/path = NodePath("../Sprite:modulate:a")
 tracks/2/interp = 1
 tracks/2/imported = false
 tracks/2/keys = {
-"times": FloatArray( 0.2, 0.5 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 1.0, 0.0 ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath(".:visibility/visible")
+tracks/3/path = NodePath(".:visible")
 tracks/3/interp = 1
 tracks/3/imported = false
 tracks/3/keys = {
-"times": FloatArray( 0, 1 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("../Sprite:transform/pos")
+tracks/4/path = NodePath("../Sprite:position")
 tracks/4/interp = 1
 tracks/4/imported = false
 tracks/4/keys = {
-"times": FloatArray( 0.2, 0.5 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0, 0 ), Vector2( 0, -15 ) ]
 }
@@ -167,23 +167,23 @@ tracks/5/path = NodePath("se:play/play")
 tracks/5/interp = 1
 tracks/5/imported = false
 tracks/5/keys = {
-"times": FloatArray( 0 ),
-"transitions": FloatArray( 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 2,
 "values": [ "Heartless Spawn" ]
 }
 tracks/6/type = "value"
-tracks/6/path = NodePath("..:visibility/visible")
+tracks/6/path = NodePath("..:visible")
 tracks/6/interp = 1
 tracks/6/imported = false
 tracks/6/keys = {
-"times": FloatArray( 0, 1 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
 }
 
-[sub_resource type="SampleLibrary" id=6]
+[sub_resource type="Resource" id=6]
 
 "samples/Heartless Spawn" = {
 "db": 0.0,
@@ -194,19 +194,19 @@ tracks/6/keys = {
 
 [node name="Shadow" type="Area2D"]
 
-input/pickable = true
+input_pickable = true
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 shapes/1/shape = SubResource( 2 )
-shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-collision/layers = 0
-script/script = ExtResource( 1 )
+collision_layer = 0
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -239,42 +239,40 @@ hframes = 10
 
 [node name="anim" type="AnimationPlayer" parent="Sprite"]
 
-playback/process_mode = 1
-playback/default_blend_time = 0.0
-root/root = NodePath("..")
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
 anims/idle = SubResource( 3 )
-playback/active = true
-playback/speed = 0.7
+playback_active = true
+playback_speed = 0.7
 blend_times = [  ]
 autoplay = "idle"
 
 [node name="spawn" type="AnimatedSprite" parent="."]
 
-visibility/visible = false
+visible = false
 frames = ExtResource( 3 )
 animation = "default"
 
 [node name="anim" type="AnimationPlayer" parent="spawn"]
 
-playback/process_mode = 1
-playback/default_blend_time = 0.0
-root/root = NodePath("..")
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
 anims/In = SubResource( 4 )
 anims/Out = SubResource( 5 )
-playback/active = true
-playback/speed = 1.0
+playback_active = true
+playback_speed = 1.0
 blend_times = [  ]
 autoplay = ""
 
-[node name="se" type="SamplePlayer2D" parent="spawn"]
+[node name="se" type="AudioStreamPlayer2D" parent="spawn"]
 
-params/volume_db = 0.0
-params/pitch_scale = 1.0
-params/attenuation/min_distance = 1.0
-params/attenuation/max_distance = 2048.0
-params/attenuation/distance_exp = 1.0
+volume_db = 0.0
+pitch_scale = 1.0
+attenuation_min_distance = 1.0
+attenuation_max_distance = 2048.0
+attenuation_distance_exp = 1.0
 config/polyphony = 1
 config/samples = SubResource( 6 )
 config/pitch_random = 0.2
-
-

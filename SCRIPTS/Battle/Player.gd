@@ -61,7 +61,7 @@ func _ready():
 	# Player gains control
 	set_process_input(true)
 
-func _fixed_process(delta):
+func _physics_process(delta):  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 	# Simple Input check
 	var actions = int(Input.is_action_pressed("left"))  << 2
 	actions    |= int(Input.is_action_pressed("right")) << 3
@@ -107,7 +107,7 @@ func _move_battler(actions, delta):
 	var direction = battler_motion[actions]
 	# Move it
 	var motion = direction * battler_speed * delta
-	motion = move(motion)
+	motion = move_and_collide(motion)  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 
 	# Face it
 	direction.y = 1
@@ -141,3 +141,4 @@ func fight():
 func at_ease():
 	.at_ease()
 	set_process_input(false)
+

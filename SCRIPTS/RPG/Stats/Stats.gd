@@ -77,3 +77,4 @@ func calculate(key):
 		total += mod.get_mul(key) * get_base(key)
 
 	return total
+

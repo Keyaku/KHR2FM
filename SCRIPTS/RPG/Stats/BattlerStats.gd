@@ -29,9 +29,9 @@ var blocked = []
 ######################
 func _init(copy={}):
 	if typeof(copy) != TYPE_DICTIONARY:
-		if copy extends PlayerStats:
+		if copy is PlayerStats:  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 			copy = copy.final
-		elif copy extends Stats:
+		elif copy is Stats:  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 			copy = copy.base
 		else:
 			copy = {}
@@ -114,3 +114,4 @@ func update(_=null):
 	# Calculate the rest, taking into account that these have changed
 	for stat in MAIN_STATS:
 		set(stat, min(get(stat), calculate(stat)))
+

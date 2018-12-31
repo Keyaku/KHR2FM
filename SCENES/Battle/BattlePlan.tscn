@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=1]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://SCRIPTS/Battle/BattlePlan.gd" type="Script" id=1]
 
@@ -14,8 +14,8 @@ extents = Vector2( 1, 240 )
 
 [node name="BattlePlan" type="YSort"]
 
-sort/enabled = true
-script/script = ExtResource( 1 )
+sort_enabled = true
+script = ExtResource( 1 )
 __meta__ = {
 "__editor_plugin_screen__": "Script"
 }
@@ -26,21 +26,21 @@ random_instances = false
 [node name="Ring" type="StaticBody2D" parent="."]
 
 editor/display_folded = true
-input/pickable = false
+input_pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 450, -1 )
+shapes/0/transform = Transform2D( 1, 0, 0, 1, 450, -1 )
 shapes/0/trigger = false
 shapes/1/shape = SubResource( 1 )
-shapes/1/transform = Matrix32( 1, 0, 0, 1, 450, 480 )
+shapes/1/transform = Transform2D( 1, 0, 0, 1, 450, 480 )
 shapes/1/trigger = false
 shapes/2/shape = SubResource( 2 )
-shapes/2/transform = Matrix32( 1, 0, 0, 1, -1, 240 )
+shapes/2/transform = Transform2D( 1, 0, 0, 1, -1, 240 )
 shapes/2/trigger = false
 shapes/3/shape = SubResource( 2 )
-shapes/3/transform = Matrix32( 1, 0, 0, 1, 855, 240 )
+shapes/3/transform = Transform2D( 1, 0, 0, 1, 855, 240 )
 shapes/3/trigger = false
-collision/layers = 1
-collision/mask = 1
+collision_layer = 1
+collision_mask = 1
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -52,30 +52,28 @@ __meta__ = {
 
 [node name="Top" type="CollisionShape2D" parent="Ring"]
 
-transform/pos = Vector2( 450, -1 )
+position = Vector2( 450, -1 )
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
 [node name="Bottom" type="CollisionShape2D" parent="Ring"]
 
-transform/pos = Vector2( 450, 480 )
+position = Vector2( 450, 480 )
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 1
 
 [node name="Left" type="CollisionShape2D" parent="Ring"]
 
-transform/pos = Vector2( -1, 240 )
+position = Vector2( -1, 240 )
 shape = SubResource( 2 )
 trigger = false
 _update_shape_index = 2
 
 [node name="Right" type="CollisionShape2D" parent="Ring"]
 
-transform/pos = Vector2( 855, 240 )
+position = Vector2( 855, 240 )
 shape = SubResource( 2 )
 trigger = false
 _update_shape_index = 3
-
-

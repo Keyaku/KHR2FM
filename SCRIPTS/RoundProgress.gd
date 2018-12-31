@@ -60,7 +60,7 @@ func _draw_progress_bar(polygon, value):
 
 	# If value is 0, skip all the computation
 	if value == 0:
-		polygon.set_polygon(Vector2Array())
+		polygon.set_polygon(PoolVector2Array())  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 
 	var radius = (int(min(get_size().x, get_size().y)) >> 1) - thickness
 
@@ -126,10 +126,10 @@ func get_circle_arc(center, radius, amount):
 	var angle_to = ARC_ANGLE * amount / MAX_ARC_VALUE + angle_from
 
 	if angle_from >= angle_to:
-		return Vector2Array()
+		return PoolVector2Array()  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 
-	var points_inner = Vector2Array()
-	var points_outer = Vector2Array()
+	var points_inner = PoolVector2Array()  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
+	var points_outer = PoolVector2Array()  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 
 	var bar_inner = radius - half_thickness
 	var bar_outer = radius + half_thickness
@@ -146,3 +146,4 @@ func get_circle_arc(center, radius, amount):
 		points_inner.push_back(position)
 
 	return points_outer + points_inner
+

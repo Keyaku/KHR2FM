@@ -70,12 +70,12 @@ func set_hook(idx=get_box()):
 	else:
 		Hook.hide()
 
-func set_hook_pos(x):
+func set_hook_position(x):  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 	var limit_left  = get_margin(MARGIN_LEFT)
 	var limit_right = get_margin(MARGIN_RIGHT)
 
 	# Subtracting Bubble's current global position since X is global
-	x -= get_global_pos().x
+	x -= get_global_position().x  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 
 	# Flip depending on where it sits on the screen
 	var flip = x > (int(limit_right) >> 1)
@@ -86,8 +86,9 @@ func set_hook_pos(x):
 	elif x > limit_right:
 		x = limit_right
 
-	Hook.set_pos(Vector2(x, 0))
+	Hook.set_position(Vector2(x, 0))  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 
 func set_modulate(mod):
 	get_stylebox("panel").set_modulate(mod)
 	Hook.set_modulate(mod)
+

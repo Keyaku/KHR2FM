@@ -49,7 +49,7 @@ func set_state(value):
 func _ready():
 	# Setting MP bar's initial position (for SlideAnim)
 	initial_pos = OS.get_video_mode_size()
-	initial_pos.y = get_global_pos().y
+	initial_pos.y = get_global_position().y  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 
 	# Runtime settings
 	if not get_tree().is_editor_hint():
@@ -65,8 +65,8 @@ func _ready():
 		connect("zero", self, "switch_state")
 
 func _display():
-	var final_pos = get_global_pos()
-	set_global_pos(initial_pos)
+	var final_pos = get_global_position()  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
+	set_global_position(initial_pos)  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 	SlideAnim.stop_all()
 	SlideAnim.interpolate_method(
 		self, "set_global_pos",
@@ -95,3 +95,4 @@ func _decrementing():
 ###############
 ### Methods ###
 ###############
+

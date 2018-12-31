@@ -1,163 +1,163 @@
-[gd_scene load_steps=128 format=1]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://GAME/STORY/Intro/Intro.gd" type="Script" id=1]
-[ext_resource path="res://ASSETS/SE/Cutscenes/Light_1.wav" type="Sample" id=2]
-[ext_resource path="res://ASSETS/SE/Cutscenes/Light_2.wav" type="Sample" id=3]
-[ext_resource path="res://ASSETS/SE/Cutscenes/Noise.wav" type="Sample" id=4]
-[ext_resource path="res://ASSETS/SE/Cutscenes/Reminiscence_2.wav" type="Sample" id=5]
-[ext_resource path="res://ASSETS/SE/Cutscenes/Water_Drop.wav" type="Sample" id=6]
-[ext_resource path="res://ASSETS/GFX/Game/Events/Introduction/Introduction_108.jpg" type="Texture" id=7]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Introduction_109.png" type="Texture" id=8]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Introduction_110.png" type="Texture" id=9]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Introduction_111.png" type="Texture" id=10]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Introduction_112.png" type="Texture" id=11]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_008.jpg" type="Texture" id=12]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_009.jpg" type="Texture" id=13]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_010.jpg" type="Texture" id=14]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_011.jpg" type="Texture" id=15]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_012.jpg" type="Texture" id=16]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_013.jpg" type="Texture" id=17]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_014.jpg" type="Texture" id=18]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_015.jpg" type="Texture" id=19]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_016.jpg" type="Texture" id=20]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_017.jpg" type="Texture" id=21]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_018.jpg" type="Texture" id=22]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_019.jpg" type="Texture" id=23]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_020.jpg" type="Texture" id=24]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_021.jpg" type="Texture" id=25]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_022.jpg" type="Texture" id=26]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_023.jpg" type="Texture" id=27]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_024.jpg" type="Texture" id=28]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_025.jpg" type="Texture" id=29]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_026.jpg" type="Texture" id=30]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_027.jpg" type="Texture" id=31]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_028.jpg" type="Texture" id=32]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_029.jpg" type="Texture" id=33]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_030.jpg" type="Texture" id=34]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_031.jpg" type="Texture" id=35]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_032.jpg" type="Texture" id=36]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_033.jpg" type="Texture" id=37]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_034.jpg" type="Texture" id=38]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_035.jpg" type="Texture" id=39]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_036.jpg" type="Texture" id=40]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_037.jpg" type="Texture" id=41]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_038.jpg" type="Texture" id=42]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_039.jpg" type="Texture" id=43]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_040.jpg" type="Texture" id=44]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_041.jpg" type="Texture" id=45]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_042.jpg" type="Texture" id=46]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_043.jpg" type="Texture" id=47]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_044.jpg" type="Texture" id=48]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_045.jpg" type="Texture" id=49]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_046.jpg" type="Texture" id=50]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_047.jpg" type="Texture" id=51]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_048.jpg" type="Texture" id=52]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_049.jpg" type="Texture" id=53]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_050.jpg" type="Texture" id=54]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_051.jpg" type="Texture" id=55]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_052.jpg" type="Texture" id=56]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_053.jpg" type="Texture" id=57]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_054.jpg" type="Texture" id=58]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_055.jpg" type="Texture" id=59]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_056.jpg" type="Texture" id=60]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_057.jpg" type="Texture" id=61]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_058.jpg" type="Texture" id=62]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_059.jpg" type="Texture" id=63]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_060.jpg" type="Texture" id=64]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_061.jpg" type="Texture" id=65]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_062.jpg" type="Texture" id=66]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_063.jpg" type="Texture" id=67]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_064.jpg" type="Texture" id=68]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_065.jpg" type="Texture" id=69]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_066.jpg" type="Texture" id=70]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_067.jpg" type="Texture" id=71]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_068.jpg" type="Texture" id=72]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_069.jpg" type="Texture" id=73]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_070.jpg" type="Texture" id=74]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_071.jpg" type="Texture" id=75]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_072.jpg" type="Texture" id=76]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_073.jpg" type="Texture" id=77]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_074.jpg" type="Texture" id=78]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_075.jpg" type="Texture" id=79]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_076.jpg" type="Texture" id=80]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_077.jpg" type="Texture" id=81]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_078.jpg" type="Texture" id=82]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_079.jpg" type="Texture" id=83]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_080.jpg" type="Texture" id=84]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_081.jpg" type="Texture" id=85]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_082.jpg" type="Texture" id=86]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_083.jpg" type="Texture" id=87]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_084.jpg" type="Texture" id=88]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_085.jpg" type="Texture" id=89]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_086.jpg" type="Texture" id=90]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_087.jpg" type="Texture" id=91]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_088.jpg" type="Texture" id=92]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_089.jpg" type="Texture" id=93]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_090.jpg" type="Texture" id=94]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_091.jpg" type="Texture" id=95]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_092.jpg" type="Texture" id=96]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_093.jpg" type="Texture" id=97]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_094.jpg" type="Texture" id=98]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_095.jpg" type="Texture" id=99]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_096.jpg" type="Texture" id=100]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_097.jpg" type="Texture" id=101]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_098.jpg" type="Texture" id=102]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_099.jpg" type="Texture" id=103]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_100.jpg" type="Texture" id=104]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_101.jpg" type="Texture" id=105]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_102.jpg" type="Texture" id=106]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_103.jpg" type="Texture" id=107]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_104.jpg" type="Texture" id=108]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_105.jpg" type="Texture" id=109]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_106.jpg" type="Texture" id=110]
-[ext_resource path="res://ASSETS/GFX/Animations/Intro/Flash/Introduction_107.png" type="Texture" id=111]
-[ext_resource path="res://ASSETS/LANG/FONTS/NotoSans/NotoSans-Regular.ttf" type="DynamicFontData" id=112]
+[ext_resource path="" type="Sample" id=2]
+[ext_resource path="" type="Sample" id=3]
+[ext_resource path="" type="Sample" id=4]
+[ext_resource path="" type="Sample" id=5]
+[ext_resource path="" type="Sample" id=6]
+[ext_resource path="" type="Texture" id=7]
+[ext_resource path="" type="Texture" id=8]
+[ext_resource path="" type="Texture" id=9]
+[ext_resource path="" type="Texture" id=10]
+[ext_resource path="" type="Texture" id=11]
+[ext_resource path="" type="Texture" id=12]
+[ext_resource path="" type="Texture" id=13]
+[ext_resource path="" type="Texture" id=14]
+[ext_resource path="" type="Texture" id=15]
+[ext_resource path="" type="Texture" id=16]
+[ext_resource path="" type="Texture" id=17]
+[ext_resource path="" type="Texture" id=18]
+[ext_resource path="" type="Texture" id=19]
+[ext_resource path="" type="Texture" id=20]
+[ext_resource path="" type="Texture" id=21]
+[ext_resource path="" type="Texture" id=22]
+[ext_resource path="" type="Texture" id=23]
+[ext_resource path="" type="Texture" id=24]
+[ext_resource path="" type="Texture" id=25]
+[ext_resource path="" type="Texture" id=26]
+[ext_resource path="" type="Texture" id=27]
+[ext_resource path="" type="Texture" id=28]
+[ext_resource path="" type="Texture" id=29]
+[ext_resource path="" type="Texture" id=30]
+[ext_resource path="" type="Texture" id=31]
+[ext_resource path="" type="Texture" id=32]
+[ext_resource path="" type="Texture" id=33]
+[ext_resource path="" type="Texture" id=34]
+[ext_resource path="" type="Texture" id=35]
+[ext_resource path="" type="Texture" id=36]
+[ext_resource path="" type="Texture" id=37]
+[ext_resource path="" type="Texture" id=38]
+[ext_resource path="" type="Texture" id=39]
+[ext_resource path="" type="Texture" id=40]
+[ext_resource path="" type="Texture" id=41]
+[ext_resource path="" type="Texture" id=42]
+[ext_resource path="" type="Texture" id=43]
+[ext_resource path="" type="Texture" id=44]
+[ext_resource path="" type="Texture" id=45]
+[ext_resource path="" type="Texture" id=46]
+[ext_resource path="" type="Texture" id=47]
+[ext_resource path="" type="Texture" id=48]
+[ext_resource path="" type="Texture" id=49]
+[ext_resource path="" type="Texture" id=50]
+[ext_resource path="" type="Texture" id=51]
+[ext_resource path="" type="Texture" id=52]
+[ext_resource path="" type="Texture" id=53]
+[ext_resource path="" type="Texture" id=54]
+[ext_resource path="" type="Texture" id=55]
+[ext_resource path="" type="Texture" id=56]
+[ext_resource path="" type="Texture" id=57]
+[ext_resource path="" type="Texture" id=58]
+[ext_resource path="" type="Texture" id=59]
+[ext_resource path="" type="Texture" id=60]
+[ext_resource path="" type="Texture" id=61]
+[ext_resource path="" type="Texture" id=62]
+[ext_resource path="" type="Texture" id=63]
+[ext_resource path="" type="Texture" id=64]
+[ext_resource path="" type="Texture" id=65]
+[ext_resource path="" type="Texture" id=66]
+[ext_resource path="" type="Texture" id=67]
+[ext_resource path="" type="Texture" id=68]
+[ext_resource path="" type="Texture" id=69]
+[ext_resource path="" type="Texture" id=70]
+[ext_resource path="" type="Texture" id=71]
+[ext_resource path="" type="Texture" id=72]
+[ext_resource path="" type="Texture" id=73]
+[ext_resource path="" type="Texture" id=74]
+[ext_resource path="" type="Texture" id=75]
+[ext_resource path="" type="Texture" id=76]
+[ext_resource path="" type="Texture" id=77]
+[ext_resource path="" type="Texture" id=78]
+[ext_resource path="" type="Texture" id=79]
+[ext_resource path="" type="Texture" id=80]
+[ext_resource path="" type="Texture" id=81]
+[ext_resource path="" type="Texture" id=82]
+[ext_resource path="" type="Texture" id=83]
+[ext_resource path="" type="Texture" id=84]
+[ext_resource path="" type="Texture" id=85]
+[ext_resource path="" type="Texture" id=86]
+[ext_resource path="" type="Texture" id=87]
+[ext_resource path="" type="Texture" id=88]
+[ext_resource path="" type="Texture" id=89]
+[ext_resource path="" type="Texture" id=90]
+[ext_resource path="" type="Texture" id=91]
+[ext_resource path="" type="Texture" id=92]
+[ext_resource path="" type="Texture" id=93]
+[ext_resource path="" type="Texture" id=94]
+[ext_resource path="" type="Texture" id=95]
+[ext_resource path="" type="Texture" id=96]
+[ext_resource path="" type="Texture" id=97]
+[ext_resource path="" type="Texture" id=98]
+[ext_resource path="" type="Texture" id=99]
+[ext_resource path="" type="Texture" id=100]
+[ext_resource path="" type="Texture" id=101]
+[ext_resource path="" type="Texture" id=102]
+[ext_resource path="" type="Texture" id=103]
+[ext_resource path="" type="Texture" id=104]
+[ext_resource path="" type="Texture" id=105]
+[ext_resource path="" type="Texture" id=106]
+[ext_resource path="" type="Texture" id=107]
+[ext_resource path="" type="Texture" id=108]
+[ext_resource path="" type="Texture" id=109]
+[ext_resource path="" type="Texture" id=110]
+[ext_resource path="" type="Texture" id=111]
+[ext_resource path="" type="DynamicFontData" id=112]
 [ext_resource path="res://SCENES/Dialogue/Dialogue.tscn" type="PackedScene" id=113]
-[ext_resource path="res://addons/avatar/Avatar.gd" type="Script" id=114]
-[ext_resource path="res://addons/avatar/icon.png" type="Texture" id=115]
-[ext_resource path="res://ASSETS/GFX/Game/Avatars/Kiryoku.tres" type="SpriteFrames" id=116]
-[ext_resource path="res://ASSETS/GFX/Game/Avatars/Yuugure.tres" type="SpriteFrames" id=117]
+[ext_resource path="" type="Script" id=114]
+[ext_resource path="" type="Texture" id=115]
+[ext_resource path="" type="SpriteFrames" id=116]
+[ext_resource path="" type="SpriteFrames" id=117]
 
 [sub_resource type="Animation" id=1]
 
-resource/name = "BG_Appear"
+resource_name = "BG_Appear"
 length = 1.0
 loop = false
 step = 0.1
 tracks/0/type = "value"
-tracks/0/path = NodePath("BG:visibility/opacity")
+tracks/0/path = NodePath("BG:modulate:a")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 1 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 0.0, 1.0 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("BG:visibility/visible")
+tracks/1/path = NodePath("BG:visible")
 tracks/1/interp = 1
 tracks/1/imported = false
 tracks/1/keys = {
-"times": FloatArray( 0 ),
-"transitions": FloatArray( 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ true ]
 }
 
 [sub_resource type="Animation" id=2]
 
-resource/name = "Flash"
+resource_name = "Flash"
 length = 8.0
 loop = false
 step = 0.1
 tracks/0/type = "value"
-tracks/0/path = NodePath("Flash:visibility/visible")
+tracks/0/path = NodePath("Flash:visible")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0 ),
-"transitions": FloatArray( 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ true ]
 }
@@ -166,18 +166,18 @@ tracks/1/path = NodePath("Flash:frame")
 tracks/1/interp = 1
 tracks/1/imported = false
 tracks/1/keys = {
-"times": FloatArray( 0, 3 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 0, 99 ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Big:visibility/opacity")
+tracks/2/path = NodePath("Big:modulate:a")
 tracks/2/interp = 1
 tracks/2/imported = false
 tracks/2/keys = {
-"times": FloatArray( 5, 6, 7, 8 ),
-"transitions": FloatArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 5, 6, 7, 8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
 "values": [ 0.0, 1.0, 1.0, 0.0 ]
 }
@@ -186,28 +186,28 @@ tracks/3/path = NodePath("General:play/play")
 tracks/3/interp = 1
 tracks/3/imported = false
 tracks/3/keys = {
-"times": FloatArray( 0, 5 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 2,
 "values": [ "Light_2", "Reminiscence_2" ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("Flash:visibility/opacity")
+tracks/4/path = NodePath("Flash:modulate:a")
 tracks/4/interp = 1
 tracks/4/imported = false
 tracks/4/keys = {
-"times": FloatArray( 0, 5 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 1.0, 1.0 ]
 }
 tracks/5/type = "value"
-tracks/5/path = NodePath("Big:visibility/visible")
+tracks/5/path = NodePath("Big:visible")
 tracks/5/interp = 1
 tracks/5/imported = false
 tracks/5/keys = {
-"times": FloatArray( 0, 5, 8 ),
-"transitions": FloatArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 5, 8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
 "values": [ false, true, false ]
 }
@@ -218,32 +218,32 @@ length = 5.0
 loop = false
 step = 0.1
 tracks/0/type = "value"
-tracks/0/path = NodePath("Flash:visibility/opacity")
+tracks/0/path = NodePath("Flash:modulate:a")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 1 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 1.0, 0.0 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Dialogue:visibility/opacity")
+tracks/1/path = NodePath("Dialogue:modulate:a")
 tracks/1/interp = 1
 tracks/1/imported = false
 tracks/1/keys = {
-"times": FloatArray( 0 ),
-"transitions": FloatArray( 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ 1.0 ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Hand:visibility/opacity")
+tracks/2/path = NodePath("Hand:modulate:a")
 tracks/2/interp = 1
 tracks/2/imported = false
 tracks/2/keys = {
-"times": FloatArray( 3, 4 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 3, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 0.0, 1.0 ]
 }
@@ -252,18 +252,18 @@ tracks/3/path = NodePath("Flash:frame")
 tracks/3/interp = 1
 tracks/3/imported = false
 tracks/3/keys = {
-"times": FloatArray( 0 ),
-"transitions": FloatArray( 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ 99 ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("Hand:visibility/visible")
+tracks/4/path = NodePath("Hand:visible")
 tracks/4/interp = 1
 tracks/4/imported = false
 tracks/4/keys = {
-"times": FloatArray( 0, 3 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ false, true ]
 }
@@ -272,15 +272,15 @@ tracks/5/path = NodePath("Loop:playback/play")
 tracks/5/interp = 1
 tracks/5/imported = false
 tracks/5/keys = {
-"times": FloatArray( 0, 3 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 2,
 "values": [ "[stop]", "Hand" ]
 }
 
 [sub_resource type="Animation" id=4]
 
-resource/name = "Hurt"
+resource_name = "Hurt"
 length = 4.0
 loop = false
 step = 0.1
@@ -289,25 +289,25 @@ tracks/0/path = NodePath("General:play/play")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0 ),
-"transitions": FloatArray( 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 2,
 "values": [ "Noise" ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("BG:visibility/opacity")
+tracks/1/path = NodePath("BG:modulate:a")
 tracks/1/interp = 1
 tracks/1/imported = false
 tracks/1/keys = {
-"times": FloatArray( 0, 0.5 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 1.0, 0.0 ]
 }
 
 [sub_resource type="Animation" id=5]
 
-resource/name = "Keyblade"
+resource_name = "Keyblade"
 length = 6.0
 loop = false
 step = 0.1
@@ -316,48 +316,48 @@ tracks/0/path = NodePath("General:play/play")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0 ),
-"transitions": FloatArray( 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 2,
 "values": [ "Light_1" ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Hand_Light:visibility/opacity")
+tracks/1/path = NodePath("Hand_Light:modulate:a")
 tracks/1/interp = 1
 tracks/1/imported = false
 tracks/1/keys = {
-"times": FloatArray( 0, 1, 2, 4 ),
-"transitions": FloatArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 1, 2, 4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
 "values": [ 0.0, 1.0, 1.0, 0.0 ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Flash:visibility/opacity")
+tracks/2/path = NodePath("Flash:modulate:a")
 tracks/2/interp = 1
 tracks/2/imported = false
 tracks/2/keys = {
-"times": FloatArray( 2, 2.5, 4.5, 5.5 ),
-"transitions": FloatArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 2, 2.5, 4.5, 5.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
 "values": [ 0.0, 1.0, 1.0, 0.0 ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("Hand:visibility/opacity")
+tracks/3/path = NodePath("Hand:modulate:a")
 tracks/3/interp = 1
 tracks/3/imported = false
 tracks/3/keys = {
-"times": FloatArray( 0, 1, 2, 4 ),
-"transitions": FloatArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 1, 2, 4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
 "values": [ 1.0, 1.0, 1.0, 0.0 ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("Hand_Light:visibility/visible")
+tracks/4/path = NodePath("Hand_Light:visible")
 tracks/4/interp = 1
 tracks/4/imported = false
 tracks/4/keys = {
-"times": FloatArray( 0, 4 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
 }
@@ -372,13 +372,13 @@ tracks/0/path = NodePath("Hand:frame")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 0.5 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 0, 1 ]
 }
 
-[sub_resource type="SampleLibrary" id=7]
+[sub_resource type="Resource" id=7]
 
 samples/Light_1 = {
 "db": 0.0,
@@ -431,42 +431,42 @@ animations = [ {
 
 [sub_resource type="DynamicFont" id=10]
 
-font/size = 36
-font/use_mipmaps = false
-font/use_filter = false
-font/font = ExtResource( 112 )
+size = 36
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 112 )
 
 [node name="Intro" type="Node"]
 
-script/script = ExtResource( 1 )
+script = ExtResource( 1 )
 
 [node name="Master" type="AnimationPlayer" parent="."]
 
-playback/process_mode = 1
-playback/default_blend_time = 0.0
-root/root = NodePath("..")
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
 anims/BG_Appear = SubResource( 1 )
 anims/Flash = SubResource( 2 )
 anims/Hand = SubResource( 3 )
 anims/Hurt = SubResource( 4 )
 anims/Keyblade = SubResource( 5 )
-playback/active = true
-playback/speed = 1.0
+playback_active = true
+playback_speed = 1.0
 blend_times = [  ]
 autoplay = ""
 
 [node name="Loop" type="AnimationPlayer" parent="."]
 
-playback/process_mode = 1
-playback/default_blend_time = 0.0
-root/root = NodePath("..")
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
 anims/Hand = SubResource( 6 )
-playback/active = true
-playback/speed = 3.0
+playback_active = true
+playback_speed = 3.0
 blend_times = [  ]
 autoplay = ""
 
-[node name="General" type="SamplePlayer" parent="."]
+[node name="General" type="Node" parent="."]
 
 config/polyphony = 1
 config/samples = SubResource( 7 )
@@ -485,22 +485,22 @@ default/chorus_send = 0.0
 
 [node name="BG" type="Sprite" parent="."]
 
-visibility/visible = false
+visible = false
 texture = ExtResource( 7 )
 centered = false
 
 [node name="Hand_Light" type="Sprite" parent="."]
 
-visibility/visible = false
-visibility/opacity = 0.0
+visible = false
+modulate = Color( 1, 1, 1, 0 )
 texture = ExtResource( 8 )
 centered = false
 
 [node name="Hand" type="AnimatedSprite" parent="."]
 
 editor/display_folded = true
-visibility/visible = false
-visibility/opacity = 0.0
+visible = false
+modulate = Color( 1, 1, 1, 0 )
 frames = SubResource( 8 )
 animation = "default"
 centered = false
@@ -512,7 +512,7 @@ centered = false
 
 [node name="Flash" type="AnimatedSprite" parent="."]
 
-visibility/visible = false
+visible = false
 visibility/blend_mode = 1
 frames = SubResource( 9 )
 animation = "default"
@@ -521,18 +521,18 @@ centered = false
 
 [node name="Big" type="Label" parent="."]
 
-visibility/visible = false
-visibility/opacity = 0.0
-anchor/left = 2
-anchor/right = 2
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_right = 0.0
 focus/ignore_mouse = true
 focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 0.25
-margin/top = 198.0
-margin/right = 0.75
-margin/bottom = 247.0
+size_flags_horizontal = 1
+size_flags_vertical = 0
+margin_left = 0.25
+margin_top = 198.0
+margin_right = 0.75
+margin_bottom = 247.0
 custom_fonts/font = SubResource( 10 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "BIG_00"
@@ -542,6 +542,7 @@ uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+mouse_filter = 1
 
 [node name="Dialogue" parent="." instance=ExtResource( 113 )]
 
@@ -550,17 +551,17 @@ csv_path = "res://ASSETS/LANG/TEXT/Game/Intro/Intro.csv"
 
 [node name="Kiryoku" type="Control" parent="Dialogue"]
 
-visibility/visible = false
-visibility/behind_parent = true
+visible = false
+show_behind_parent = true
 focus/ignore_mouse = false
 focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 0.0
-margin/top = 0.0
-margin/right = 1.0
-margin/bottom = 1.0
-script/script = ExtResource( 114 )
+size_flags_horizontal = 1
+size_flags_vertical = 1
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 1.0
+margin_bottom = 1.0
+script = ExtResource( 114 )
 __meta__ = {
 "_editor_icon": ExtResource( 115 )
 }
@@ -569,20 +570,21 @@ face_sprites = ExtResource( 116 )
 frame = 0
 flip_frame = false
 stay_hidden = false
+mouse_filter = 0
 
 [node name="Yuugure" type="Control" parent="Dialogue"]
 
-visibility/visible = false
-visibility/behind_parent = true
+visible = false
+show_behind_parent = true
 focus/ignore_mouse = false
 focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 0.0
-margin/top = 0.0
-margin/right = 1.0
-margin/bottom = 1.0
-script/script = ExtResource( 114 )
+size_flags_horizontal = 1
+size_flags_vertical = 1
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 1.0
+margin_bottom = 1.0
+script = ExtResource( 114 )
 __meta__ = {
 "_editor_icon": ExtResource( 115 )
 }
@@ -591,5 +593,4 @@ face_sprites = ExtResource( 117 )
 frame = 0
 flip_frame = false
 stay_hidden = false
-
-
+mouse_filter = 0

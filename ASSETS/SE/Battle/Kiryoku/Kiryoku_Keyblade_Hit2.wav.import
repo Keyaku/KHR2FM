@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Kiryoku_Keyblade_Hit2.wav-f4946e30eb9c42a10b74d6d89ada567d.sample"
+
+[deps]
+
+source_file="res://ASSETS/SE/Battle/Kiryoku/Kiryoku_Keyblade_Hit2.wav"
+dest_files=[ "res://.import/Kiryoku_Keyblade_Hit2.wav-f4946e30eb9c42a10b74d6d89ada567d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

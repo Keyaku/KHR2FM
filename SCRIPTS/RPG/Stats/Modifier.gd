@@ -33,3 +33,4 @@ func get_add(key):
 	return add[key] if add.has(key) else 0
 func get_mul(key):
 	return mul[key] if mul.has(key) else 0
+

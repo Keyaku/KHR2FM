@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Kiryoku_09.wav-b7579c0b7e1e717e8e70f65c8c930869.sample"
+
+[deps]
+
+source_file="res://ASSETS/SE/Battle/Kiryoku/Kiryoku_09.wav"
+dest_files=[ "res://.import/Kiryoku_09.wav-b7579c0b7e1e717e8e70f65c8c930869.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

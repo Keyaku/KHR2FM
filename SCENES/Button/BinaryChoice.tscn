@@ -1,42 +1,41 @@
-[gd_scene load_steps=3 format=1]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://SCRIPTS/Button/BinaryChoice.gd" type="Script" id=1]
 [ext_resource path="res://SCENES/Button/KHR2_Button.tscn" type="PackedScene" id=2]
 
 [node name="BinaryChoice" type="HBoxContainer"]
 
-anchor/top = 1
-anchor/right = 1
-anchor/bottom = 1
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 focus/ignore_mouse = false
 focus/stop_mouse = false
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 20.0
-margin/top = 49.0
-margin/right = 20.0
-margin/bottom = 10.0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+margin_left = 20.0
+margin_top = -49.0
+margin_right = -20.0
+margin_bottom = -10.0
 custom_constants/separation = 15
 alignment = 1
-script/script = ExtResource( 1 )
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
+mouse_filter = 0
 
 [node name="Yes" parent="." instance=ExtResource( 2 )]
 
-margin/left = 282.0
-margin/right = 400.0
+margin_left = 282.0
+margin_right = 400.0
 text = "CHOICE_YES"
 
 [node name="No" parent="." instance=ExtResource( 2 )]
 
-margin/left = 415.0
-margin/right = 531.0
+margin_left = 415.0
+margin_right = 531.0
 text = "CHOICE_NO"
 
-[connection signal="pressed" from="Yes" to="." method="emit_signal" binds= [ "pressed", true ]]
+[connection signal="pressed" from="Yes" to="." method="emit_signal" binds=[ "pressed", true ]]
 
-[connection signal="pressed" from="No" to="." method="emit_signal" binds= [ "pressed", false ]]
-
-
+[connection signal="pressed" from="No" to="." method="emit_signal" binds=[ "pressed", false ]]

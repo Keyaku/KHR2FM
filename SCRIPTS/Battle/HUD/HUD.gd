@@ -18,8 +18,8 @@ func _ready():
 	reset_hud(Enemy, enemy)
 
 	if !get_tree().is_editor_hint():
-		Player.set_self_opacity(0)
-		Enemy.set_self_opacity(0)
+		Player.self_modulate.a = 0  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
+		Enemy.self_modulate.a = 0  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 
 # Updates the label of a given ProgressBar node, if available
 func _update_label(node, value):
@@ -73,3 +73,4 @@ func set_enemy_stats(stats):
 func apply_value(key, value, member):
 	member[key].set_value(value)
 	_update_label(member[key], value)
+

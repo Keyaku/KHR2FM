@@ -23,3 +23,4 @@ func _fetch_sequence():
 		Dialogue.speak("Govan", 0, 3)
 	else:
 		KHR2.quit_game()
+

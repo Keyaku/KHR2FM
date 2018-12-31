@@ -29,3 +29,4 @@ func _interacted():
 
 		Dialogue.close()
 		player.start()
+

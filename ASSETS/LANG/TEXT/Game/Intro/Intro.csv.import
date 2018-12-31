@@ -1,0 +1,16 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+
+[deps]
+
+files=[ "res://ASSETS/LANG/TEXT/Game/Intro/Intro.fr.translation", "res://ASSETS/LANG/TEXT/Game/Intro/Intro.en.translation", "res://ASSETS/LANG/TEXT/Game/Intro/Intro.es.translation" ]
+
+source_file="res://ASSETS/LANG/TEXT/Game/Intro/Intro.csv"
+dest_files=[ "res://ASSETS/LANG/TEXT/Game/Intro/Intro.fr.translation", "res://ASSETS/LANG/TEXT/Game/Intro/Intro.en.translation", "res://ASSETS/LANG/TEXT/Game/Intro/Intro.es.translation" ]
+
+[params]
+
+compress=true
+delimiter=0

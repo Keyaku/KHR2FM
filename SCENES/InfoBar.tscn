@@ -1,64 +1,64 @@
-[gd_scene load_steps=19 format=1]
+[gd_scene load_steps=21 format=2]
 
-[ext_resource path="res://ASSETS/GFX/Game/Battle/Others/Info_00.png" type="Texture" id=1]
+[ext_resource path="" type="Texture" id=1]
 [ext_resource path="res://SCRIPTS/InfoBar.gd" type="Script" id=2]
-[ext_resource path="res://ASSETS/LANG/FONTS/KH2_menu/KH2_ALL_MENU_I.TTF" type="DynamicFontData" id=3]
-[ext_resource path="res://ASSETS/LANG/FONTS/NotoSans/NotoSans-Regular.ttf" type="DynamicFontData" id=4]
-[ext_resource path="res://addons/text_scroll/TextScroll.gd" type="Script" id=5]
-[ext_resource path="res://addons/text_scroll/icon.png" type="Texture" id=6]
-[ext_resource path="res://ASSETS/SE/System/Infos.wav" type="Sample" id=7]
+[ext_resource path="" type="DynamicFontData" id=3]
+[ext_resource path="" type="DynamicFontData" id=4]
+[ext_resource path="" type="Script" id=5]
+[ext_resource path="" type="Texture" id=6]
+[ext_resource path="" type="Sample" id=7]
 
 [sub_resource type="StyleBoxTexture" id=1]
 
-content_margin/left = -1.0
-content_margin/right = -1.0
-content_margin/top = -1.0
-content_margin/bottom = -1.0
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
 texture = ExtResource( 1 )
-margin/left = 205.0
-margin/right = 13.0
-margin/top = 0.0
-margin/bottom = 0.0
-expand_margin/left = 0.0
-expand_margin/right = 0.0
-expand_margin/top = 0.0
-expand_margin/bottom = 0.0
+margin_left = 205.0
+margin_right = 13.0
+margin_top = 0.0
+margin_bottom = 0.0
+expand_margin_left = 0.0
+expand_margin_right = 0.0
+expand_margin_top = 0.0
+expand_margin_bottom = 0.0
 draw_center = true
 
 [sub_resource type="DynamicFont" id=2]
 
-font/size = 12
-font/use_mipmaps = false
-font/use_filter = false
-font/font = ExtResource( 3 )
+size = 12
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 3 )
 
 [sub_resource type="StyleBoxEmpty" id=3]
 
-content_margin/left = -1.0
-content_margin/right = -1.0
-content_margin/top = -1.0
-content_margin/bottom = -1.0
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
 
 [sub_resource type="StyleBoxEmpty" id=4]
 
-content_margin/left = -1.0
-content_margin/right = -1.0
-content_margin/top = -1.0
-content_margin/bottom = -1.0
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
 
 [sub_resource type="StyleBoxEmpty" id=5]
 
-content_margin/left = -1.0
-content_margin/right = -1.0
-content_margin/top = -1.0
-content_margin/bottom = -1.0
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
 
 [sub_resource type="StyleBoxEmpty" id=6]
 
-content_margin/left = -1.0
-content_margin/right = -1.0
-content_margin/top = -1.0
-content_margin/bottom = -1.0
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
 
 [sub_resource type="Theme" id=7]
 
@@ -73,10 +73,10 @@ HScrollBar/styles/scroll_focus = SubResource( 6 )
 
 [sub_resource type="DynamicFont" id=8]
 
-font/size = 14
-font/use_mipmaps = false
-font/use_filter = true
-font/font = ExtResource( 4 )
+size = 14
+use_mipmaps = false
+use_filter = true
+font_data = ExtResource( 4 )
 
 [sub_resource type="Animation" id=9]
 
@@ -88,18 +88,18 @@ tracks/0/path = NodePath("Swish:play/play")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0 ),
-"transitions": FloatArray( 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 2,
 "values": [ "Infos" ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath(".:rect/pos")
+tracks/1/path = NodePath(".:rect_position")
 tracks/1/interp = 1
 tracks/1/imported = false
 tracks/1/keys = {
-"times": FloatArray( 0, 0.25 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Vector2( -450, 30 ), Vector2( 0, 30 ) ]
 }
@@ -110,17 +110,17 @@ length = 0.25
 loop = false
 step = 0.05
 tracks/0/type = "value"
-tracks/0/path = NodePath(".:rect/pos")
+tracks/0/path = NodePath(".:rect_position")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 0.25 ),
-"transitions": FloatArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0, 30 ), Vector2( -450, 30 ) ]
 }
 
-[sub_resource type="SampleLibrary" id=11]
+[sub_resource type="Resource" id=11]
 
 samples/Infos = {
 "db": 0.0,
@@ -131,23 +131,24 @@ samples/Infos = {
 
 [node name="InfoBar" type="Panel"]
 
-rect/min_size = Vector2( 220, 50 )
+rect_min_size = Vector2( 220, 50 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
-size_flags/horizontal = 0
-size_flags/vertical = 0
-margin/left = -450.0
-margin/top = 30.0
-margin/right = -5.0
-margin/bottom = 80.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+margin_left = -450.0
+margin_top = 30.0
+margin_right = -5.0
+margin_bottom = 80.0
 custom_styles/panel = SubResource( 1 )
-script/script = ExtResource( 2 )
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_lock_": true
 }
 info_message = "INFO_BATTLE_MESSAGE"
 autostart = true
 autoclose = false
+mouse_filter = 1
 
 [node name="Autoclose" type="Timer" parent="."]
 
@@ -160,12 +161,12 @@ autostart = false
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 25.0
-margin/top = 1.0
-margin/right = 185.0
-margin/bottom = 20.0
+size_flags_horizontal = 1
+size_flags_vertical = 0
+margin_left = 25.0
+margin_top = 1.0
+margin_right = 185.0
+margin_bottom = 20.0
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.384314, 0.423529, 0.396078, 1 )
 text = "INFO_TITLE"
@@ -177,39 +178,41 @@ max_lines_visible = -1
 __meta__ = {
 "_edit_lock_": true
 }
+mouse_filter = 1
 
 [node name="Constraint" type="ScrollContainer" parent="."]
 
 editor/display_folded = true
-anchor/right = 1
-anchor/bottom = 1
+anchor_right = 1.0
+anchor_bottom = 1.0
 focus/ignore_mouse = true
 focus/stop_mouse = true
-size_flags/horizontal = 3
-size_flags/vertical = 3
-theme/theme = SubResource( 7 )
-margin/left = 30.0
-margin/top = 25.0
-margin/right = 30.0
-margin/bottom = -7.0
-scroll/horizontal = true
-scroll/vertical = false
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource( 7 )
+margin_left = 30.0
+margin_top = 25.0
+margin_right = -30.0
+margin_bottom = 7.0
+scroll_horizontal_enabled = true
+scroll_vertical_enabled = false
 __meta__ = {
 "_edit_lock_": true
 }
+mouse_filter = 1
 
 [node name="InfoLabel" type="Label" parent="Constraint"]
 
 editor/display_folded = true
-rect/min_size = Vector2( 385, 20 )
+rect_min_size = Vector2( 385, 20 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = -1.0
-margin/top = 0.0
-margin/right = 384.0
-margin/bottom = 20.0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+margin_left = -1.0
+margin_top = 0.0
+margin_right = 384.0
+margin_bottom = 20.0
 custom_fonts/font = SubResource( 8 )
 valign = 1
 percent_visible = 1.0
@@ -218,6 +221,7 @@ max_lines_visible = 1
 __meta__ = {
 "_edit_lock_": true
 }
+mouse_filter = 1
 
 [node name="TextScroll" type="Timer" parent="Constraint/InfoLabel"]
 
@@ -225,7 +229,7 @@ process_mode = 1
 wait_time = 0.01
 one_shot = false
 autostart = false
-script/script = ExtResource( 5 )
+script = ExtResource( 5 )
 __meta__ = {
 "_editor_icon": ExtResource( 6 )
 }
@@ -235,10 +239,10 @@ confirm_sound = null
 
 [node name="Overflow" type="Tween" parent="Constraint/InfoLabel"]
 
-playback/process_mode = 1
+playback_process_mode = 1
 playback/active = false
-playback/repeat = false
-playback/speed = 1.0
+playback_speed = false
+playback_speed = 1.0
 
 [node name="Delay" type="Timer" parent="Constraint/InfoLabel"]
 
@@ -249,17 +253,17 @@ autostart = false
 
 [node name="Slide" type="AnimationPlayer" parent="."]
 
-playback/process_mode = 1
-playback/default_blend_time = 0.0
-root/root = NodePath("..")
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
 anims/In = SubResource( 9 )
 anims/Out = SubResource( 10 )
-playback/active = true
-playback/speed = 1.0
+playback_active = true
+playback_speed = 1.0
 blend_times = [  ]
 autoplay = ""
 
-[node name="Swish" type="SamplePlayer" parent="."]
+[node name="Swish" type="Node" parent="."]
 
 config/polyphony = 1
 config/samples = SubResource( 11 )
@@ -275,5 +279,3 @@ default/filter/gain = 1.0
 default/reverb_room = 2
 default/reverb_send = 0.0
 default/chorus_send = 0.0
-
-

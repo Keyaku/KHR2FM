@@ -42,3 +42,4 @@ func _pressed_new(button_idx):
 
 	# Issue a new game
 	emit_signal("finished")
+

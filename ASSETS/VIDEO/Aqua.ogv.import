@@ -1,0 +1,14 @@
+[remap]
+
+importer="Theora"
+type="VideoStreamTheora"
+path="res://.import/Aqua.ogv-de34436a063f24d09a26e3bb728457f1.ogvstr"
+
+[deps]
+
+source_file="res://ASSETS/VIDEO/Aqua.ogv"
+dest_files=[ "res://.import/Aqua.ogv-de34436a063f24d09a26e3bb728457f1.ogvstr" ]
+
+[params]
+
+loop=true

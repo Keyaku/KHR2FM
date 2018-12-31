@@ -39,3 +39,4 @@ func _ready():
 	InfoBar.play()
 
 	# TODO: to black then fade in to battle screen then dialogue appears
+

@@ -36,7 +36,7 @@ func _ready():
 func _process(delta):
 	# Write subtitles
 	if Subtitles.on && Subtitles.index < Subtitles.array.size():
-		var cur_pos = get_stream_pos()
+		var cur_pos = get_stream_position()  #-- NOTE: Automatically converted by Godot 2 to 3 converter, please review
 		var sub_begin = Subtitles.array[Subtitles.index][0] # ON timer
 		var sub_end   = Subtitles.array[Subtitles.index][1] # OFF timer
 		var sub_text  = Subtitles.array[Subtitles.index][2] # text
@@ -109,3 +109,4 @@ static func timer_to_seconds(formatted):
 		ret += mins * 60
 	ret += secs
 	return ret
+

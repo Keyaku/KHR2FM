@@ -46,3 +46,4 @@ func get_type():
 
 func is_type(type):
 	return type == get_type()
+
