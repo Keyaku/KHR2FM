@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://SCRIPTS/Menus/SimplePause.gd" type="Script" id=1]
-[ext_resource path="" type="DynamicFontData" id=2]
-[ext_resource path="res://SCENES/Button/KHR2_Button.tscn" type="PackedScene" id=3]
+[ext_resource path="res://SCENES/Button/KHR2_Button.tscn" type="PackedScene" id=2]
 
 [sub_resource type="StyleBoxFlat" id=1]
 
@@ -11,52 +10,67 @@ content_margin_right = -1.0
 content_margin_top = -1.0
 content_margin_bottom = -1.0
 bg_color = Color( 0, 0, 0, 1 )
-light_color = Color( 0.8, 0.8, 0.8, 1 )
-dark_color = Color( 0.8, 0.8, 0.8, 1 )
-border_size = 0
+draw_center = true
+border_width_left = 0
+border_width_top = 0
+border_width_right = 0
+border_width_bottom = 0
+border_color = Color( 0.8, 0.8, 0.8, 1 )
 border_blend = true
-draw_bg = true
+corner_radius_top_left = 0
+corner_radius_top_right = 0
+corner_radius_bottom_right = 0
+corner_radius_bottom_left = 0
+corner_detail = 8
+expand_margin_left = 0.0
+expand_margin_right = 0.0
+expand_margin_top = 0.0
+expand_margin_bottom = 0.0
+shadow_color = Color( 0, 0, 0, 0.6 )
+shadow_size = 0
+anti_aliasing = true
+anti_aliasing_size = 1
 
 [sub_resource type="DynamicFont" id=2]
 
 size = 40
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 2 )
 
 [node name="Pause" type="Panel"]
 
 pause_mode = 2
 self_modulate = Color( 1, 1, 1, 0.7 )
+anchor_left = 0.0
+anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-focus/ignore_mouse = false
-focus/stop_mouse = true
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-margin_left = 0.0
-margin_top = 0.0
-margin_right = 0.0
-margin_bottom = 0.0
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
-mouse_filter = 0
 
-[node name="Message" type="Label" parent="."]
+[node name="Message" type="Label" parent="." index="0"]
 
+anchor_left = 0.0
+anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-focus/ignore_mouse = true
-focus/stop_mouse = true
+margin_top = 150.0
+margin_bottom = -250.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 0
-margin_left = 0.0
-margin_top = 150.0
-margin_right = 0.0
-margin_bottom = -250.0
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
@@ -72,31 +86,44 @@ max_lines_visible = -1
 __meta__ = {
 "_edit_lock_": true
 }
-mouse_filter = 1
 
-[node name="Options" type="VBoxContainer" parent="."]
+[node name="Options" type="VBoxContainer" parent="." index="1"]
 
-editor/display_folded = true
 anchor_left = 0.5
+anchor_top = 0.0
 anchor_right = 0.5
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags_horizontal = 1
-size_flags_vertical = 1
+anchor_bottom = 0.0
 margin_left = -100.0
 margin_top = 242.0
 margin_right = 100.0
 margin_bottom = 324.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
 custom_constants/separation = 5
 alignment = 1
 __meta__ = {
 "_edit_lock_": true
 }
-mouse_filter = 1
 
-[node name="Resume" parent="Options" instance=ExtResource( 3 )]
+[node name="Resume" parent="Options" index="0" instance=ExtResource( 2 )]
 
-margin_top = 21.0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 24.0
 margin_right = 200.0
-margin_bottom = 60.0
+margin_bottom = 58.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_default_cursor_shape = 0
+group = null
 text = "PAUSE_CONTINUE"
+align = 1
+
+

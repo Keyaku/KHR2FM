@@ -1,32 +1,38 @@
-[gd_scene load_steps=1 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://SCENES/Button/KHR2_Button_selected.tres" type="StyleBox" id=1]
 [ext_resource path="res://SCENES/Button/KHR2_Button_normal.tres" type="StyleBox" id=2]
-[ext_resource path="" type="DynamicFont" id=3]
-[ext_resource path="res://SCRIPTS/Button/KHR2_Button.gd" type="Script" id=4]
+[ext_resource path="res://SCRIPTS/Button/KHR2_Button.gd" type="Script" id=3]
 
-[node name="KHR2_Button" type="Button"]
+[node name="KHR2_Button" type="Button" index="0"]
 
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags_horizontal = 1
-size_flags_vertical = 1
-margin_left = 0.0
-margin_top = 0.0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_right = 93.0
 margin_bottom = 39.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
 custom_styles/hover = ExtResource( 1 )
 custom_styles/pressed = ExtResource( 1 )
 custom_styles/focus = ExtResource( 1 )
 custom_styles/disabled = ExtResource( 2 )
 custom_styles/normal = ExtResource( 2 )
-custom_fonts/font = ExtResource( 3 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
+group = null
 text = "OPTION"
 flat = false
-script = ExtResource( 4 )
+align = 1
+script = ExtResource( 3 )
 can_cancel = false
 cursor = null
-mouse_filter = 0
+
+
